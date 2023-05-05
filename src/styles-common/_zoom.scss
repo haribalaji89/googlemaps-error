@@ -1,0 +1,63 @@
+// Style for Zoom In Popup
+
+// Style to customize the style of caarousel indicators
+.carousel-indicators {
+    justify-content: left !important;
+    margin-left: 5% !important;
+    bottom: 1rem !important;
+}
+
+//Style to position the close button at the right 
+.close-btn{
+    position: absolute;
+    z-index: 1032;
+    right: 10px;
+    top: 5px;
+}
+.close-icon{
+    width: 18px;
+}
+
+// Style for the label & price of car 
+%car-label{
+    position: absolute;
+    z-index: 999;
+    top: 10px;
+    left: 20px;
+}
+.car-label-white{
+    @extend %car-label;
+    color: white;
+}
+.car-label-black{
+    @extend %car-label;
+    color: black;
+} 
+
+// Style for the overlay
+.grey-overlay{
+    padding: 4rem;
+    position: absolute;
+    z-index: 900;
+    background-image: url("/assets/images/gradient.png");
+    width: 100%;
+}
+
+// Style for the Active tab on click
+.active-tab{
+    padding-bottom: 3px;
+    border-bottom: 4px solid $BMW-Blue-hover;
+}
+
+// Modal Customisation
+.modal-content {
+    border: 1px solid rgba(0,0,0,0) !important;
+    border-radius: 0 !important;
+}
+
+// Media Queries
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 650px !important;
+}
+}

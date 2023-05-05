@@ -1,0 +1,199 @@
+
+.zoom-image-pop .ui-dialog-titlebar {
+    display: none;
+}
+
+.closeZoom {
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* For Zoom img popup */
+
+.box{
+    position:relative;
+    img{
+        max-width: 100%;
+    }
+}
+    .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: #fff;
+    font-size: 2.5vw;
+    font-weight: 700;
+    }
+    .second-line {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 700;
+    }
+    .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    }
+    /* .active, .a:hover {
+    color: white;
+    border-bottom: 4px solid $BMW-Blue-hover;
+    padding-bottom: 0px;} */
+    .bottom-left.active, .a:hover {
+        color: white;
+        border-bottom: 4px solid $BMW-Blue-hover;
+        padding-bottom: 0px;}
+   
+        .pl0{
+            padding-left: 0px !important;
+            }
+            
+            .br0{
+            border-right: 0px;
+            }
+        
+            .pclose-icon{
+                display: inline;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                color: #000;
+                cursor: pointer;
+                z-index: 20;
+            }
+            .pclose-icon-white{
+                display: inline;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                color: #fff;
+                cursor: pointer;
+                z-index: 20;
+            }
+        
+ .zoomBtn{
+     position: absolute;
+     top: 5%;
+     left: 90%;
+     cursor: pointer;
+}
+       
+
+   /* .textbox1 {
+       height:44px !important;
+   } */
+   .top-left-white{
+    position: absolute;
+    top: 2%;
+    left: 30px;
+    color: #ffffff;
+    font-size: 1.3em;    
+    font-family: $BMW-font-Bold;
+    }
+
+.second-line {
+        position: absolute;
+        top: 7%;
+        left: 16px;
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: 700;
+        }
+
+.white-txt-zoom{
+    color: #ffffff;
+    font-size: 1em;
+    /* margin: 5px 5px 5px -15px; */
+    font-weight: lighter;
+}
+.black-txt-zoom{
+    color: #757575;
+    font-size: 0.7em;
+    margin: 5px 5px 5px -15px;
+    font-weight: lighter;
+}
+.white-txt-zoom-inr{
+    color: #ffffff;
+    font-size: 0.8em;
+    font-family: $BMW-font-Bold;
+}
+
+.ulzoom{
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.remove-dot{
+    list-style-type: none; 
+
+}
+
+.gradient.black-txt{
+    background:none;
+}
+
+.black-txt .top-left-white, .black-txt .white-txt-zoom-inr{
+    color: #000000;
+}
+
+.black-txt .white-txt-zoom{
+    color: #757575;   
+}
+
+.select-loader {
+    position: absolute;
+    width: 98px;
+    left: 30%;
+    top: -26px;
+}
+
+.car-label-margin{
+    margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+    // .car-icon-margin{
+    //     margin-bottom: -80px;
+    // }
+    .top-left-white{
+        color:#000;
+        font-size: 14px;
+    }
+    .white-txt-zoom{
+        color:#757575;
+        font-size: 14px;
+    }
+    .white-txt-zoom-inr{
+        color: #000;
+        font-size: 14px;
+    }
+}
+
+.img-shadow{
+    box-shadow: 0 0 2px 0 #000;
+}
+
+.image-loadind-zoom{
+    padding-top: 20%;
+    position: absolute;
+    left: 43%;
+}
+
+/* For Select Exterior Box Height on Models Page */
+
+.models-exterior-height {
+    min-height: 9.88em;
+}
+
+.zindex-2{
+    z-index: 2;
+}
+.alert.alert-warning{
+    margin-top: 1em;
+}

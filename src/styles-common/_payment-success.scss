@@ -1,0 +1,24 @@
+
+.embed-responsive-16by9::before {
+    padding-top: 0;
+}
+
+.video_overlay{
+   position: relative;
+    z-index: 999;
+}
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height:auto;
+    border: 0;
+}
+.carimage-pay-success {
+    padding-top: 7%;
+    width: 85%;
+    margin-left: 4%;
+    margin-bottom: 0px;
+}

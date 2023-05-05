@@ -1,0 +1,187 @@
+// header starts
+#dealer-screen{
+	header {
+		margin-top: -100px;
+		.container{
+			@media (min-width: 768px) {
+				min-height : 86.5px !important;
+			}	
+	
+			.dealer {
+				cursor :auto !important;
+			}
+	
+	
+			.dealer-details {
+				margin-top: -4px;
+				margin-left: 5px;
+				width: 20px !important;
+				color: white !important;
+				vertical-align: middle;
+				margin-right: auto;
+				min-width: 150px;
+			}
+			.menu-anchor-styles-dealer{
+				color: white;
+				font-family: $BMW-font-Bold;
+				padding: 1.6rem 0.5rem !important;
+				font-size: 1em !important;
+				cursor:auto;
+			}
+			.num {
+				padding: 2px;
+				position: relative;
+				font-size: 9px !important;
+				top: -11px;
+				color: white;
+				border: 1px white solid;
+				border-radius: 50%;
+			}
+			.logout {
+				margin-left: 16px;
+				@media (max-width: 768px) {
+					display: block;
+					margin-bottom: 10px;
+					border-bottom: 1px dotted white;
+					width:100%;
+					padding-top: 9px;
+					padding-bottom: 12px;
+				}
+			}
+			.reset-password{
+				@media (max-width: 768px) {
+					margin-left: 16px;
+				}
+			}
+			.sub-menus-border {
+				@media (max-width: 768px) {
+						width:100%;
+					}
+			}
+			.guest {
+				font-size: 18px !important;
+				margin-right: 11rem;
+			}
+			.sub-menus-dealer {
+				cursor: pointer;
+				color: white;
+				font-size: 1em;
+				font-family: $BMW-font-Bold;
+				.profile-img {
+					width: 26px;
+				}
+			}
+	
+		}
+		.container.notification-list{
+			@media (min-width: 768px) {
+				min-height : 100% !important;
+			}
+		}
+		.inline {
+			display: inline-block !important;
+		}
+	}
+	// header ends
+	
+	.navbar-toggler {
+		border: none;
+		outline: none;
+		background: transparent !important;
+		&.collapsed {
+		  .top-bar {
+			transform: rotate(0);
+		  }
+		  .middle-bar {
+			opacity: 1;
+		  }
+		  .bottom-bar {
+			transform: rotate(0);
+		  }
+		}
+		.top-bar {
+		  transform: rotate(45deg);
+		  transform-origin: 10% 10%;
+		}
+		.middle-bar {
+		  opacity: 0;
+		}
+		.bottom-bar {
+		  transform: rotate(-45deg);
+		  transform-origin: 10% 90%;
+		}
+		.icon-bar {
+		  width: 22px;
+		  height: 2px;
+		  background-color: #ffffff;
+		  display: block;
+		  transition: all 0.2s;
+		  margin-top: 4px;
+		}
+		}
+		
+		.toggle-password {
+			float: right;
+		margin-left: -25px;
+		margin-top: -32px;
+		position: relative;
+		z-index: 2;
+		margin-right: 15px;
+			cursor: pointer;
+			z-index: 3;
+		}
+		
+		#navbarNavAltMarkup {
+			z-index: 2;
+		}
+	
+		.dealer-change-password {
+			min-height: 390px;
+		}
+	
+		@media (max-width: 992px){
+			.navbar-collapse{
+				background: $BMW-grey-links;
+			}
+		}
+		.header-bg {
+			background-color: $header-grey;
+		}
+		.logo {
+			outline: none;
+			position: absolute;
+			top: 22px;
+			right: 25px;
+			z-index: 999;
+			// width: 90px;
+			// height: 98px!important;
+		}
+		@media (max-width: 729px){
+			.logo {
+    		     top:45px;
+			}
+		}
+
+		.cursor-hover {
+			cursor: pointer;
+		}
+		@media (min-width: 992px){
+			.header-bg {
+    		height: 98px;
+			}
+		}
+		.fa-bell{
+			&:hover{
+				color: $BMW-Blue-hover;
+			}
+			cursor: pointer;
+			color:#fff;
+		}
+		#cssmenu{
+			&:hover{
+				.fa-bell{
+					color: $BMW-Blue-hover;
+				}
+			}
+		}
+}

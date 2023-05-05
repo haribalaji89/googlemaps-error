@@ -1,0 +1,28 @@
+.car-image-property {
+	width: 50px;
+	cursor: pointer;
+	margin-right: 3px;
+	margin-bottom: 3px;
+}
+
+.default-text {
+	font-style: italic;
+	color: grey;
+	padding-bottom: 0.5rem;
+	line-height: 1rem;
+	font-size: 0.9rem;
+}
+
+.card-border {
+	border: 0rem solid rgba(0, 0, 0, .125);
+}
+
+.active-option{
+	border: 2px solid $BMW-Blue-hover;
+}
+
+.zoomImages img.img-fluid {
+    width: 120px;
+}
+
+  

@@ -1,0 +1,1428 @@
+@import 'variables';
+
+#dealer-screen{
+	height: 100%;
+	margin: 0px;
+	background-color: $BMW-grey-lines;
+	main {
+		// filter tab start
+		.filter-tab {
+			width: 100%;
+			height: auto;
+			@media (max-width: 768px) {
+				height: auto;
+				padding-top: 70px;
+			}
+			.dropdown-menu.show {
+				border-radius: 0px;
+				width: 91%;
+				@media (max-width: 768px) {
+					width: 100%;
+				}
+			}
+			background-color: $headline-color;
+			padding-top: 20px;
+			//padding-top: 65px;
+			.icon-wrapper {
+				background: $BMW-grey-inactive;
+				border-radius: 0;
+			}
+	
+			.icon-wrapper-search {
+				background: #ffffff;
+				border-radius: 0;
+				border:none;
+			}
+			.fa-search {
+				background: #ffffff;
+				color: $header-grey;
+				font-size: 22px;
+				padding: 13px 6px 0;
+				border-radius: 2px;
+			}
+			.dropdown {
+				display: flex;
+				align-items: center;
+				height: 45px;
+			}
+	
+			.btn{
+				background-color:$BMW-Blue-hover !important;
+				border: none;
+				box-shadow: none !important;
+				width: 230px;
+				height: 45px;
+				border-radius: 0px;
+				text-align: left;
+				margin-top: -8px;
+				padding: 10px;
+				@media (max-width: 768px) {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+			}
+	
+			.btn:hover {
+				background-color: $BMW-Blue-hover !important;
+				border: none;
+				box-shadow: none !important;
+				width: 230px;
+				height: 45px;
+				border-radius: 0px;
+				text-align: left;
+				margin-top : -8px;
+				@media (max-width: 768px) {
+					width: 100%;
+					margin-bottom: 20px;
+				}
+			}
+	
+			.dropdown-toggle::after {
+				float: right;
+				margin-top: 10px;
+				@media (max-width: 768px) {
+						float: right;
+						margin-top: 10px;
+				}
+				  
+			}
+			.filter-prop {
+				background-color: #ffffff;
+				font-size: 13px;
+				border-radius: 0;
+				height: 45px;
+			}
+		}
+	
+		// filter tab ends
+	
+		// status container starts
+		.status-container {
+			font-size: 13px;
+			font-weight: 500;
+			padding-top: 20px;
+			.col-md-3 {
+				text-align: center;
+			}
+		}
+	
+		// status container ends
+	
+		// sales and enquiry details starts
+		section {
+			.container {
+				min-height: 200px;
+			}
+			
+			.row {
+				background: #ffffff;
+				min-height: 150px;
+			}
+			.ipad-fix {
+				@media only screen 
+				and (min-device-width : 768px) 
+				and (max-device-width : 1024px)  {
+					margin-left: 10px;
+					margin-right:10px;
+				}
+			}
+			.section-column-1 {
+				word-wrap: break-word;
+				padding-top: 20px;
+				.chkbox-text {
+					color: $header-grey;
+					font-size: 13px;
+				}
+			}
+			.section-column-2 {
+				word-wrap: break-word;
+				padding-top: 20px;
+				.chkbox-text {
+					color: $header-grey;
+					font-size: 13px;
+				}
+				ul {
+					padding-left: 20px;
+				}
+				.row {
+					min-height: 33px;
+				}
+				.underline {
+					text-decoration: underline $BMW-Blue;
+				}
+				.section-column-title {
+					font-size: 15px;
+					font-weight: 500;
+					color: $BMW-grey-links;
+					margin-left: 2px;
+				}
+			}
+			.section-column-3 {
+				word-wrap: break-word;
+				padding-top: 20px;
+				align-items: left;
+				text-align: left;
+				.scroll-text {
+						display: block;
+						margin-left: 0px;
+						margin-right: auto;
+						padding: 5px;
+						height: 100px;
+						overflow: scroll;
+						margin-top: 12px;
+						margin-bottom: 20px;
+						width: 100%;
+						overflow-x: hidden;
+						p {
+							margin-top: -10px;
+							}
+					}
+					#scrollbar-style::-webkit-scrollbar {
+						width: 6px;
+						background-color: $BMW-grey-lines;
+					}
+					#scrollbar-style::-webkit-scrollbar-thumb {
+						background-color: #000000;
+					}
+					#scrollbar-style::-webkit-scrollbar-track {
+						-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+						box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+						background-color: $bg-light-grey;
+					}
+				.chkbox-text {
+					color: $header-grey;
+					font-size: 13px;
+					color: $BMW-Blue;
+				}
+				
+				.btn {
+					background: $BMW-grey-links;
+					border: none;
+					border-radius: none;
+				}
+	
+				.btn:hover {
+					background: $BMW-grey-hover;
+				}
+				.enquiries-content {
+					padding-top: 20px;
+					color: $header-grey;
+				}
+			}
+			.section-column-4 {
+				word-wrap: break-word;
+				.user-time {
+					height: 15px;
+					.user {
+						background: $bg-light-grey;
+						height: 30px;
+						color: $BMW-grey-links;
+						text-align: left;
+						border-right: 1px solid $BMW-grey-lines;
+						@media (max-width: 768px) {
+							width: 50%;
+						}   
+					}
+					.time {
+						background: $bg-light-grey;
+						height: 30px;
+						color: $BMW-grey-links;
+						text-align: left;
+						border-left: 1px solid $BMW-grey-lines;   
+						@media only screen 
+						and (min-device-width : 768px) 
+						and (max-device-width : 1024px)  {
+							margin-top: 0px; 
+						}             
+					}
+					img {
+						width: 18px;
+						height: 18px;
+	
+						
+					}
+				}
+				.chat-box-sales {
+					padding-top: 45px;
+					img {
+						padding-top: 10px;
+						padding-left: 25px;
+					}
+					.chat-text {
+						text-align: left;
+						padding-top: 15px;
+						.smalltext {
+							font-size: 13px;
+							color: $header-grey;
+							font-family: arial;
+							margin: 0;
+						}
+					}
+	
+				}
+				.chat-box-enquiry {
+					padding-top: 45px;
+					img {
+						padding-top: 10px;
+						padding-left: 40px;
+						@media only screen 
+						and (min-device-width : 768px) 
+						and (max-device-width : 1024px) 
+						and (orientation : landscape) { 
+							padding-left: 10px;
+						}
+					}
+					.flex-column {
+						height: 150px;
+					}
+	
+					.date-time {
+						width: 145px;
+					}
+				
+					.assigned-to {
+						text-align: left;
+						background: $BMW-grey-inactive;
+						// height: 125px;
+						margin-left: 20px;
+						margin-top: -23px;
+						margin-right: -14px;
+						word-wrap: break-word;
+						@media only screen 
+						and (min-device-width : 768px) 
+						and (max-device-width : 1024px) 
+						and (orientation : landscape) { 
+							margin-left: 8px;
+							margin-right: -16px;
+						}
+						.p-2 {
+							width: 115px;
+							background: $BMW-grey-inactive;
+							height: auto;
+						}
+					}
+					hr {
+						margin-top: 0px;
+						margin-bottom: -3px;
+						border-top: .5px solid #000;
+					}
+				}
+			}
+			.vertical-border {
+				border-left: 2px solid #eee;
+				height: auto;
+			}
+		}
+	
+		.left-border {
+			border-left: 5px solid rgb(55, 0, 255) !important;
+			border: 1px solid rgb(211, 211, 211);
+		}
+	
+		.btn-grey-small {
+			height: 50px;
+			font-family: $BMW-font-Bold;
+			font-size: 12px;
+			text-align: center;
+			color: #fff;
+			background-color: $BMW-grey-links;
+			border-radius: 0;
+			width: 100%;
+		}
+		// sales and enquiry details ends
+		
+		.container-bg {
+			background: #fff;
+			min-height: 200px;
+		}
+		
+		.inline {
+			display: inline-block !important;
+		}
+	
+		// pagination starts
+		.paginator {
+			padding-top: 60px;
+		}
+	
+		.page-outof {
+			display: inline-block;
+		}
+	
+		.page-input {
+			display: inline-block;
+			width: 35px;
+			.input-number {
+				width: 30px;
+				border: 2px solid $BMW-Blue;
+				text-align: center;
+			}
+		}
+	
+		// pagination ends
+	}
+	
+	.cont-flex {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 120px;
+	}
+	
+	p-calendar {
+		width: 100%;
+	}
+	
+	.dl-page-display {
+		width: 40px;
+		height: 40px;
+		background-color: #fff;
+		border: 2px solid #1c69d3;
+		margin-right: 10px;
+		font-family: $BMW-font-Bold;
+		color: $BMW-grey-hover;
+		font-size: 1em;
+	}
+	
+	.dl-page-total{
+		font-size: 1em;
+		color: $BMW-grey-hover;
+	}
+	
+	.dl-page-prev {
+		display: inline-block;
+		color: $BMW-grey-hover;
+		font-size: 1em;
+		line-height: 120px; /* 40px removed*/
+		left: 0px;
+		width: auto;
+		padding-right: 15px;
+		z-index: 2;
+		cursor: pointer;
+	}
+	.dl-page-prev::before {
+		font-weight: 900;
+		content: "\f053" !important;
+		font-family: 'Font Awesome\ 5 Free';
+		background-position: center;
+		background-size: 14px auto;
+		width: 14px;
+		height: 14px;
+		padding-right: 5px;
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+	}
+	.dl-page-next {
+		right: 0px;
+		font-size: 1em;
+		line-height: 120px;
+		color: $BMW-grey-hover;
+		width: auto;
+		display: inline-block;
+		padding-left: 24px;
+		z-index: 2;
+		cursor: pointer;
+	}
+	.dl-page-next::after {
+		font-weight: 900;
+		content: "\f054" !important;
+		font-family: 'Font Awesome\ 5 Free';
+		background-position: center;
+		background-size: 14px auto;
+		width: 14px;
+		height: 14px;
+		transform: rotate(-90deg);
+		padding-left: 5px;
+	}
+	
+	.container.paginator {
+		text-align: center;
+	}
+	
+	.left-border.book-car {
+		border-left: 5px solid #b901ff !important;
+	}
+	.left-border.invoi-car {
+		border-left: 5px solid #86e900 !important;
+	}
+	.left-border.ready-car {
+		border-left: 5px solid #24d4ed !important;
+	}
+	.left-border.deliver-car {
+		border-left: 5px solid #1372ff !important;
+	}
+	.left-border.payment-car {
+		border-left: 5px solid #24d4ed !important;
+	}
+	
+	.status {
+		width: 128px;
+		height: 40px;
+		position: relative;
+		background: #ffffff;
+		&-after {
+			
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 0;
+				height: 0;
+				border-left: 20px solid #e6e6e6;
+				border-top: 20px solid transparent;
+				border-bottom: 20px solid transparent;
+			  }
+		}
+	
+		&-before {
+			&:before {
+				content: "";
+				position: absolute;
+				right: -20px;
+				bottom: 0;
+				width: 0;
+				height: 0;
+				border-left: 20px solid #ffffff;
+				border-top: 20px solid transparent;
+				border-bottom: 20px solid transparent;
+			  }
+		}
+	  }
+	
+	  @media only screen and (max-width: 470px) {
+		.status {
+			height: 70px;
+			padding-top: 10px;
+			&-after {
+				
+				&:after {
+					border-top: 35px solid transparent;
+					border-bottom: 35px solid transparent;
+				  }
+			}
+		
+			&-before {
+				&:before {
+					border-top: 35px solid transparent;
+					border-bottom: 35px solid transparent;
+				  }
+			}
+	  }
+	}
+	.tradein_dealer {
+
+		width: 100%;
+		display: inline-block;
+		margin-bottom: 10px;
+
+		table {
+			font-family:$BMW-font-Light;;
+			margin: 0;
+			border: 1px solid $bg-light-grey;
+			thead {
+				background: $bg-light-grey;
+	
+				th {
+					font-size: 16px;
+					width: 140px;
+					color: $headline-color;
+					word-wrap: break-word;
+					padding: 5px 10px;
+					vertical-align: middle;
+					border: none;
+					font-weight: normal;
+				}
+			}
+			td {
+				font-size: 14px;
+				width: 140px;
+				word-wrap: break-word;
+				padding: 5px 10px;
+				vertical-align: top;
+				border: none;
+				border-right: 1px solid $bg-light-grey;
+				border-bottom: 1px solid $bg-light-grey;
+			}
+		}
+	}
+	.finance_option{
+		width: 100%;
+		display: inline-block;
+		margin-bottom: 10px;
+
+		table {
+			margin: 0;
+			border: none;
+			thead {
+				background: none;
+	
+				th {
+					color: $BMW-grey;
+					font-size: 13px;
+					width: 150px;
+					font-family:"BMWTypeNext-Bold";
+					word-wrap: break-word;
+					padding: 5px 10px;
+					vertical-align: middle;
+					border: none;
+					font-weight: 700;
+				}
+			}
+			td {
+				color: $header-grey;
+				// font-family: "BMWTypeNext-Bold";
+    			font-weight: 700;
+				font-size: 13px;
+				word-wrap: break-word;
+				padding: 1px 10px;
+				vertical-align: top;
+				border: none;
+			}
+		}
+	}
+	.file-pwd{
+		width:150px;
+		margin-top:10px;
+		input{
+			&.form-control{
+			   padding:7px;
+			}
+		}
+		.input-group-append{
+			button.pwd-visible{
+				padding:7px;
+			}
+			button:focus{
+				box-shadow:none;
+			}
+		}
+	}
+	
+	.file-pwd-popup {
+		width:200px;
+		.input-group-append button:focus{
+			box-shadow:none;
+		}
+	}
+	
+	// Enquiry & Sales dropdown fix
+	.sales-enquiry-dropdown > a.dropdown-toggle > span{
+		width:87%;
+		display: inline-block;
+		overflow: hidden;
+		font-size:13px;
+		font-family: $BMW-font-Light;
+		padding: 3px 0 0;
+	}
+	.sales-enquiry-dropdown{
+		.btn{
+			margin:0 !important;
+		}
+		&.dropdown-toggle{
+			border: 1px solid #0653b6;
+		}
+		.dropdown-item{
+			padding: .25rem 0.44rem;
+			font-size:13px;
+			cursor: default;
+			width:99%;
+			font-family: $BMW-font-Light;
+			&:hover{
+				padding: .25rem 0.44rem !important;
+			}
+		}
+	}
+	
+	/*****************load chat history css start***************/
+	.list-group{
+		max-height: 320px;
+		overflow-y: scroll;
+	}
+	
+	.pl20{
+		padding-left: 20px;
+	}
+	
+	.datetime-right{
+		font-size: 0.8em;
+		float: right;
+		margin: 0 20px;
+	}
+	
+	.talk-bubble-right {
+		//margin: 5px 12px;
+		margin:5px 15px 5px 0;
+		font-size: 1em;
+		width: auto;
+		position: relative;
+		height: auto;
+		padding: 5px 15px;
+		background-color: $BMW-Blue;
+		color: #ffffff;
+		float: right;
+		text-align: left;
+		word-break: break-word;
+		word-wrap: break-word;
+		max-width: 230px;
+	
+		p {
+			margin: 5px 0;
+		}
+	}
+	
+	.tri-right.border.left-top:before {
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: -40px;
+		right: auto;
+		top: -8px;
+		bottom: auto;
+		border: 32px solid;
+		border-color: #666 transparent transparent transparent;
+	}
+	
+	.tri-right.left-top:after {
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: -15px;
+		right: auto;
+		top: 0px;
+		bottom: auto;
+		border: 15px solid;
+		border-color: #ffffff transparent transparent transparent;
+	}
+	
+	.talk-bubble {
+		margin: 5px 8px;
+		font-size: 1em;
+		display: inline-block;
+		position: relative;
+		width: auto;
+		position: relative;
+		height: auto;
+		padding: 5px 15px;
+		background-color: white;
+		max-width: 230px;
+		word-wrap: break-word;
+		
+		p {
+			margin: 5px 0;
+		}
+	}
+	
+	.tri-right.border.left-top:before {
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: -40px;
+		right: auto;
+		top: -8px;
+		bottom: auto;
+		border: 32px solid;
+		border-color: #666 transparent transparent transparent;
+	}
+	
+	.tri-right.left-top:after {
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: -15px;
+		right: auto;
+		top: 0px;
+		bottom: auto;
+		border: 15px solid;
+		border-color: #ffffff transparent transparent transparent;
+	}
+	
+	.tri-right.border.right-top:before {
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+	  left: auto;
+		right: -40px;
+	  top: -8px;
+		bottom: auto;
+		border: 32px solid;
+		border-color: $BMW-Blue transparent transparent transparent;
+	}
+	.tri-right.right-top:after{
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+	  left: auto;
+		right: -10px;
+	  top: 0px;
+		bottom: auto;
+		border: 15px solid;
+		border-color: $BMW-Blue transparent transparent transparent;
+	}
+	.chat-bg{
+		//background:rgba(243,243,243,1);
+		background-image: url("/assets/images/chat_bg.png");
+		background-color: $bg-light-grey;
+	}
+	.chat-modal{
+		 //min-width:120px !important;
+		 max-width:400px !important;
+		.modal-header{
+			padding: 1rem 1rem 0;
+		}
+		.talk-bubble{
+			float: left;
+			max-width:300px !important;
+			margin: 5px 8px 10px;
+		}
+		.talk-bubble-right{
+			float: right;
+			max-width:300px !important;
+			margin: 5px 15px 13px 0;
+		}
+		.datetime{
+			font-size: 0.8em;
+			margin:0;
+		}
+		.datetime-right{
+			margin:0;
+		}
+	}
+	.c-pointer{
+		cursor: pointer;
+	}
+	#chat-modal{
+		z-index: 9999999;
+	}
+	.chat-drop{
+		z-index: 999999;
+	}
+	.chat-not-available{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.test-drive-text{
+		font-size: 13px;
+		color:#000 !important;
+	}
+	/*****************load chat history css end***************/
+	
+	// Notification component CSS starts
+	#cssmenu > ul {
+		text-align: center;
+		display: inline-block;
+	  
+		> li {
+		  display: inline-block;
+	  
+		  /* This is when the drop down box appears */
+		  position: relative;
+	  
+		  > {
+			a {
+			  color: rgb(160, 160, 160);
+			  font-family: Verdana, 'Lucida Grande';
+			  font-size: 14px;
+			  line-height: 70px;
+	  
+			  /* This bit chances the size of the text on the main heading */
+			  padding: 15px 24px;
+	  
+			  /* This is the padding between the different titles */
+			  -webkit-transition: color 0.15s;
+			  -moz-transition: color 0.15s;
+			  -o-transition: color 0.15s;
+			  transition: color 0.15s;
+			}
+	  
+			ul {
+			  height: 400px;
+			  left: -80px;
+			  opacity: 0;
+			  visibility: hidden;
+			  padding: 16px 0 20px 0;
+			  background-color: #fafafa;
+			  position: absolute;
+			  top: 20px;
+			  width: 420px;
+			  transition: all 0.3s 0.1s;
+			  border-radius: 0px;
+			  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+			}
+		  }
+	  
+		  &:hover > ul {
+			opacity: 1;
+			top: 40px;
+	  
+			/* This is how far from the top the drop down annimation will go  */
+			visibility: visible;
+		  }
+	  
+		  > ul:before {
+			content: '';
+			display: block;
+			border-color: transparent transparent #ffffff  transparent;
+			border-style: solid;
+			border-width: 10px;
+	  
+			/* The border on the drop down box  */
+			position: absolute;
+			top: -20px;
+			left: 21%;
+			margin-left: -10px;
+		  }
+		}
+	  }
+	  
+	  .notification_btn1 {
+		background-color: #4a4a4a;
+		border-color: #8c8c8c;
+		border-radius: 0;
+		color: #fff;
+	  }
+	  
+	  .notification_btn2 {
+		background-color: #f2f2f2;
+		border-color: #8c8c8c;
+		border-radius: 0;
+		color: #000;
+	  }
+	  
+	  .btn {
+		&.focus, &:focus, &:hover {
+		  color: #ffffff;
+		  background-color: #000;
+		}
+	  }
+	  
+	  .num {
+		padding: 2px 3px;
+		position: relative;
+		font-size: 9px !important;
+		top: -11px;
+		color: white;
+		right: 0px;
+		border: 1px white solid;
+		border-radius: 50%;
+	  }
+	  
+	  h4 {
+		font-size: 13px;
+		color: #000;
+	  }
+	  
+	  p {
+		font-size: 14px;
+		color: #000;
+	  }
+	  
+	  .notification-list {
+		height: 374px;
+		overflow-y: scroll;
+		width: 98%;
+	  }
+	  
+	  .hoverBlue {
+		p, h4 {
+		  word-wrap: break-word;
+		  min-width: 380px;
+		}
+	  
+		p:hover, h4:hover {
+		  color: #0653b6;
+		}
+	  }
+	  
+	  .chat_wrap {
+		cursor: pointer;
+	  }
+	  
+	  .quotes_wrap {
+		cursor: auto;
+	  }
+	  
+	  .hasNotifications {
+		color: #FFC107;
+	  }
+	  // Notification component CSS ends ------------
+	
+	  // Dealer chat component CSS Starts
+	
+	  /* Style the header */
+	.header-left {
+		width: 75%;
+		background-color: #3d3d3d;
+		height: 50px;
+		float: left;
+		display: flex;
+		justify-content: flex-end;
+		font-size: 1.1em;
+		padding-top: .8em;
+		padding-left: 1.2em;
+		justify-content: flex-start;
+		color: white;
+	}
+	.blinking{
+		animation:blinkingText 2s infinite;
+	}
+	@keyframes blinkingText{
+		0%{     background-color: lightgray;    }
+		49%{    background-color: transparent; }
+		50%{    background-color: lightgray; }
+		99%{    background-color:transparent;  }
+		100%{   background-color: lightgray;    }
+	}
+	/* Style the header */
+	.header-right {
+	width: 25%;
+	background-color: #3d3d3d;
+	height: 50px;
+	float: right;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 3em;
+	padding-right: 11px;    
+	}
+	
+	#dl-chat-window {
+		width: 470px;
+		height: 350px;
+		position: fixed;
+		bottom: 15px;
+		right: 15px;
+		z-index: 10000;
+		
+	/* Create two columns/boxes that floats next to each other */
+	nav {
+		float: left;
+		width: 30%;
+		height: 400px; /* only for demonstration, should be removed */
+		/* background: #ccc; */
+	
+		border-right-style: solid;
+		border-right-width: thin;
+		border-right-color: #8f8f8f;
+		background-color: #f1f1f1;    
+	}
+	
+	/* Style the list inside the menu */
+	nav ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	
+	article {
+		float: left;
+		width: 100%;
+		background-color: #f1f1f1;
+		height: 400px; /* only for demonstration, should be removed */
+	}
+	
+	/* Clear floats after the columns */
+	section:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	/* Style the footer */
+	.chat-footer {
+		background-color: #f1f1f1;;
+		padding-top: 10px;
+		text-align: center;
+		color: white;
+		bottom: 15px;
+		padding-right: 2px;
+		padding-left: 2px;
+	}
+	
+	/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+	@media (max-width: 600px) {
+		nav, article {
+			width: 100%;
+			height: auto;
+		}
+	}
+	
+	}
+	
+	#dl-chat-window.closedchat{
+		max-width: 250px;
+	   
+	}
+	
+	#dl-chat-window-closed {
+		background-color:#8f8f8f;
+		width: 250px;
+		height: 50px;
+		position: fixed;
+		bottom: 15px;
+		right: 15px;
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 1em;
+		z-index: 1000;
+	}
+	
+	
+	.chat-btn {
+		background-color: #8f8f8f;
+		border: none;
+		color: white;
+		cursor: pointer;
+		font-size: .5em;
+	}
+	
+	
+	.chat-btn.focus, .chat-btn:focus, .chat-btn:hover{
+		background-color: #8f8f8f;
+		border-style: none;
+		border-color: #8f8f8f;
+	}
+	
+	
+	.form-control:focus {
+		border-color: #141414;
+		outline: 0;
+	}
+	
+	.header-left{
+		 font-family: $BMW-font-Bold;
+		color: #ffffff;
+		/* margin-bottom: 5px; */
+		font-size: 1em;
+		// line-height: 2.6em;
+		padding-left: 15px;
+	}
+	
+	#dl-chat-window {
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+	}
+	
+	.chatMin{
+		right: 20px;
+		top: 20px;
+		cursor: pointer;
+	}
+	
+	.chatMin.chatarw {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);    
+	}
+	
+	.chat-footer{
+		position: absolute;
+		bottom: 2px;
+	}
+	
+	#dl-chat-window {
+		height: auto;
+	}
+	
+	nav {
+		height: 100%;
+	}
+	
+	article{
+		height: 100%;
+	}
+	
+	.chat-data-container{
+		display: table;
+		background-color: $bg-light-grey;
+	}
+	
+	.chat-left-container{
+		display: table-cell;
+		background: #ffffff;
+		min-width: 165px;
+		border-right: 1px solid #bababa;
+		border-left: 1px solid #bababa;
+		vertical-align: top;
+	}
+	
+	.chat-right-container{
+		display: table-cell;
+		width: 100%;
+		vertical-align: bottom;
+	}
+	
+	.bg-blck{
+		background-color: $headline-color;
+	}
+	
+	.list-group{
+		max-height: 320px;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	
+	.user-list-item{
+		padding: 7px 3px 10px 6px;
+		background: linear-gradient(to bottom,#f2f2f2 0,#e0dfdf 100%);
+		cursor: pointer;
+	}
+	
+	.current-user{
+		background-color:#f5f5f5;
+		background: linear-gradient(to bottom,#ffffff 0,#f8f8f8 100%)
+	}
+	
+	@keyframes fade {
+		from { opacity: 1.0; }
+		50% { opacity: 0.5; }
+		to { opacity: 1.0; }
+	}                                                                                                                                                                                                                                  
+	
+	@-webkit-keyframes fade {
+		from { opacity: 1.0; }
+		50% { opacity: 0.5; }
+		to { opacity: 1.0; }
+	}
+	
+	.blink {
+	  animation:fade 1000ms infinite;
+	  -webkit-animation:fade 1000ms infinite;
+	  background: #f5c96e;
+	  background: linear-gradient(to bottom,#f9f1b0 0,#f5c96e 100%);
+	}
+	
+	@media screen and (max-width: 768px) {
+		.chat {
+			width: 90% !important;
+		}
+	}
+	
+	.center {
+		text-align: center;
+	}
+	
+	.btn_chathistory {
+		background-color: #727272;
+		color: white;
+		border-radius: 50px;
+		padding: 2px 15px;
+		border: 1px solid #727272;
+		margin: 5px;
+		font-size: .9em;
+		outline:0px;
+	}
+	
+	.customertype {
+		color: #3a3a3a;
+		margin-left: 20px;
+		font-style: italic;
+		font-size: 0.9em;
+		float: left;
+	}
+	
+	article {
+		float: left;
+		width: 100%;
+		background-image: url("/assets/images/chat_bg.png");
+		background-color: $bg-light-grey;
+		height: 350px;
+		
+	}
+	
+	.chat_list {
+		
+		margin: 0;
+	   
+	}
+	.chat_people {
+		overflow: hidden;
+		clear: both;
+	}
+	.chat_ib {
+		float: left;
+		padding: 5px 5px 5px 5px;
+		white-space: nowrap; 
+		width: 200px; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+		border-bottom: 1px #dadada solid;
+		cursor: pointer; 
+	}
+	
+	.chat_ib p {
+		font-size: 12px;
+		color: #7a7a7a;
+	   
+		margin-bottom: 2px;
+		padding: 0px 5px;
+	}
+	
+	.chat_ib h5 span {
+		font-size: 13px;
+		float: right;
+	}
+	
+	.active_chat {
+		background: #ebebeb;
+	}
+	.peoplename{
+		font-size: 14px;
+		font-weight: 600;
+		margin-top: 5px;
+		margin-bottom: 6px;
+		padding: 0px 5px;
+	}
+	
+	.chat_close{float: right;}
+	
+	
+	.datetime {
+		font-size: 0.8em;
+		margin: 0 20px;
+		
+	}
+	
+	.talk-bubble {
+		margin: 5px 8px;
+		font-size: 1em;
+		display: inline-block;
+		position: relative;
+		width: auto;
+		position: relative;
+		height: auto;
+		padding: 5px 15px;
+		background-color: white;
+		max-width: 230px;
+		word-wrap: break-word;
+		
+		p {
+			margin: 5px 0;
+		}
+	}
+	
+	.tri-right.border.left-top:before {
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: -40px;
+		right: auto;
+		top: -8px;
+		bottom: auto;
+		border: 32px solid;
+		border-color: #666 transparent transparent transparent;
+	}
+	
+	.tri-right.left-top:after {
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: -15px;
+		right: auto;
+		top: 0px;
+		bottom: auto;
+		border: 15px solid;
+		border-color: #ffffff transparent transparent transparent;
+	}
+	
+	/* Right Text */
+	.datetime-right{
+		font-size: 0.8em;
+		float: right;
+		margin: 0 20px;
+	}
+	
+	.talk-bubble-right {
+		//margin: 5px 12px;
+		margin:5px 15px 5px 0;
+		font-size: 1em;
+		width: auto;
+		position: relative;
+		height: auto;
+		padding: 5px 15px;
+		background-color: $BMW-Blue;
+		color: #ffffff;
+		float: right;
+		text-align: left;
+		word-break: break-word;
+		word-wrap: break-word;
+		max-width: 230px;
+	
+		p {
+			margin: 5px 0;
+		}
+	}
+	
+	.tri-right.border.right-top:before {
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+	  left: auto;
+		right: -40px;
+	  top: -8px;
+		bottom: auto;
+		border: 32px solid;
+		border-color: $BMW-Blue transparent transparent transparent;
+	}
+	.tri-right.right-top:after{
+		content: ' ';
+		position: absolute;
+		width: 0;
+		height: 0;
+	  left: auto;
+		right: -10px;
+	  top: 0px;
+		bottom: auto;
+		border: 15px solid;
+		border-color: $BMW-Blue transparent transparent transparent;
+	}
+	
+	.pl20{
+		padding-left: 20px;
+	}
+	
+	/* width */
+	::-webkit-scrollbar {
+		width: 8px;
+	   
+	}
+	
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: #ffffff; 
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #3d3d3d; 
+	}
+	
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #333333; 
+	}
+	
+	.talk-bubble-right a{
+		display: inline-block;
+		color: #f3f3f7;
+		text-decoration: underline;
+	}
+	
+	.hide {
+		display: none;
+	}
+	@media (min-width: 1200px){
+		.container {
+    		max-width: 1200px;
+			}
+	}
+	// Dealer chat component ends -------------------
+}

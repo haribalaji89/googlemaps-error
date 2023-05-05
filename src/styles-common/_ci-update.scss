@@ -1,0 +1,741 @@
+@import 'variables';
+/* Models */
+.model_nav {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    // border-bottom: 1px solid $BMW-grey-lines;
+    margin: 10px 0 0;
+    
+    .model_link {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content:  flex-start;
+        overflow-y: hidden;
+        overflow-x: auto;
+
+        li {
+            display: table;
+            height: 100%;
+            height: 75px;
+            position: relative;
+            white-space: nowrap;
+
+            a {                
+                padding: 0 25px;
+                font-size: 18px;
+                color: $BMW-grey-inactive;
+                display: table-cell;
+                vertical-align: middle;
+                text-decoration: none;
+                margin: 10px 0;
+                
+                .tab-icon{
+                    display: none;
+                }
+
+                &:before {
+                    background: $BMW-Blue none repeat scroll 0 0;
+                    content: "";
+                    height: 4px;
+                    left: 0;
+                    position: absolute;
+                    bottom: 0;
+                    transition: all 0.3s ease-in-out 0s;
+                    width: 0%;
+                }
+               
+                &.active {
+                    color: $headline-color !important;
+
+                    &:before {
+                        left: 0;
+                        width: 100%;
+                    }
+                    
+                }
+
+            }
+        }
+    }
+    &.sub {
+        padding: 0 5px;
+
+        .model_link {
+            overflow-y: hidden;
+            overflow-x: auto;
+
+            &:before {
+                height: 2px;
+            }
+
+            li {
+                a {
+                    font-size: 20px;
+                    padding: 0 22px;
+    
+                    &.active {
+                        font-size: 35px;
+                    }
+                }
+            }
+
+        }
+       
+        
+    }    
+
+    .filter {
+        position: absolute;
+        right: 0;
+        top: 32px;
+        cursor: pointer;
+
+        span, .filter_icon {
+            font-size: 16px;
+            color: $BMW-grey-inactive;
+            font-family: $BMW-font-Bold;
+        }
+        .filter_icon {
+            margin-left: 5px;
+        }
+
+        &:hover, &.active {
+            span, .filter_icon {
+                color: $headline-color;
+                transition: 0.5s;
+            }
+            .tooltip_custom {
+                visibility: visible;
+            }
+        }
+
+        .tooltip_wrp {
+            .tooltip_custom {
+                left: -126px;
+
+                &:before {
+                    right: 7px;
+                    left: auto;
+                }
+                &:after {
+                    right: 8px;
+                    left: auto;
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        width: 100%;
+                        display: inline-block;
+                        list-style: none;
+                        padding: 5px 5px 0;
+
+                        a {
+                            font-size: 12px;
+                            margin: 0;
+                            color: $BMW-grey-inactive;
+
+                            &:hover, &.active {
+                                color: $headline-color;
+                                text-decoration: none;
+                            }
+                        }
+                    }                 
+                }
+            }
+        }
+       
+    }
+}
+.tab-content {
+    .model-number {
+        font-size: 85px;
+    }
+}
+.model_box {
+    width: 100%;
+    display: inline-block;
+    padding: 25px 0 0;
+    position: relative;
+
+    img {
+        cursor: pointer;
+        outline: none;
+    }
+    h4 {
+        font-size: 18px;
+        font-family: $BMW-font-Bold;
+
+        a {
+            color: $headline-color;
+            font-size: 14px;
+            margin-left: 5px;
+            position: relative;
+            top: 1px;
+        }
+    }
+    h6 {
+        font-size: 16px;
+        color: $BMW-grey;
+
+        &.emi {
+            font-size: 14px;
+
+            .tooltip_wrp {
+               .tooltip_custom {
+                   max-width: 150px;
+               }
+            }
+        }
+    }
+}
+
+.all_models_wrp {
+    .model-number {
+        margin-top: 0;
+    }
+    .model_box {
+        padding: 45px 0 0;
+        margin: 35px 0 0;
+    }
+}
+.loader_wrp {
+    width: 100%;
+    float: left;
+    min-height: 300px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* PrimeNg Model */
+.p-dialog-mask {
+    z-index: 9999 !important;
+}
+
+.loader_bg {
+    width: 100%;
+    float: left;
+    min-height: 350px;
+    text-align: center;
+    padding: 20% 0;
+}
+
+/* Flip card */
+.flip_card {   
+    
+    &:hover {
+        .flip_card_inner {
+            -webkit-transform: inherit;
+            transform: rotateY(180deg);        
+               
+
+            .flip_card_front {
+                opacity: 0;
+            }
+            .flip_card_back {
+                opacity: 1;
+            }
+        }
+        
+    }
+
+    .flip_card_inner {
+        position: relative;
+        -webkit-transform: inherit;
+        transition: transform 0.6s;
+        -webkit-transform-style: inherit;
+        transform-style: preserve-3d;
+        width: 100%;
+
+        .flip_card_front {
+            -webkit-backface-visibility: inherit;
+            -moz-backface-visibility: visible;
+            -ms-backface-visibility: visible;
+            -o-backface-visibility: visible;
+            backface-visibility: visible;
+            min-height: 155px;
+            opacity: 1;
+        }
+        .flip_card_back {
+            position: absolute;
+            width: 100%;
+            height: 100%;       
+            top: 0;
+            background: white;
+            -webkit-transform: inherit;
+            -moz-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            opacity: 0;
+            min-height: 158px;
+        }
+    }
+    
+}
+  
+
+
+/* Header Flickering */
+body {
+    padding-top: 100px;
+    &.removeTopGap{padding-top: 0 !important;}
+}
+.banner_top {
+    margin-top: -100px;
+}
+/* Offer Tag */
+.offer_ribbon {
+    height: 168px;
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    overflow: hidden;
+    cursor: pointer; 
+
+    .offer_ribbon_inside {
+        background: $error;
+        color:#ffffff;
+        transform: rotate(45deg);
+        position: absolute;
+        right: -35px;
+        top: 50px;
+        padding: 8px;
+        min-width: 205px;
+        text-align: center;
+        font-size: 11px;
+
+        &:before {
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 10px solid $error;
+            position: absolute;
+            left:-2%;
+            right: 0;
+            bottom: 0;
+            content: "";
+            top:30px;
+            transform: rotate(-45deg);
+
+        }
+
+        &:after {
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-left: 10px solid $error;
+            border-bottom: 7px solid transparent;
+            position: absolute;
+            left: 95%;
+            right: 0;
+            top: 28px;
+            bottom: 0;
+            content: "";
+            transform: rotate(-45deg);
+        }
+
+    }
+
+}
+
+/* JP SignUp */
+.jp_signup {
+    width: 100%;
+    float: left;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 1px solid $BMW-grey-lines;
+
+    .or_text {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background: white;
+        border-radius: 50%;
+        color: $BMW-grey-lines;
+        text-align: center;
+        bottom: -13px;
+        left: 44%;
+    }
+}
+
+/* JP My config UI changes */
+.myconfig_nav {
+    @extend .model_nav;
+    margin: 20px 0 10px;
+
+    .model_link {
+        li {
+            height: 60px;
+
+            a {
+                font-weight: 600;
+                font-size: 14px;
+                color: $BMW-grey;
+
+                &:hover {
+                    color: $headline-color !important;
+
+                    &:before {
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.myconfig_nav {
+    @extend .model_nav;
+    margin: 20px 0 10px;
+
+    .model_link {
+        li {
+            height: 60px;
+
+            a {
+                font-weight: 600;
+                font-size: 14px;
+                color: $BMW-grey;
+
+                &:hover {
+                    color: $headline-color !important;
+
+                    &:before {
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.config_details {
+    .cnt_col {
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+
+        h4 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+    }
+   
+    .image_cnt {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding: 0 170px 15px 100px;
+        min-height: 65px;        
+        border-bottom: 1px solid $BMW-grey-lines;
+        margin-top: 10px;
+
+        &.wheel {
+            min-height: 100px;
+        }
+        
+        img {
+            width: 87px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        h3 {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .price {
+            position: absolute;
+            right: 0;
+            font-weight: 600;
+            top: 5px;
+        }
+    }
+    .optional_eqp {
+        width: 100%;
+        float: left;
+        border: 1px solid $BMW-grey-lines;
+        padding: 10px;
+        background: white;
+        margin-top: 10px;
+
+        .price {
+            margin-top: 10px;
+            font-weight: 600;
+            display: inline-block;
+            width: 100%;
+        }
+        h3 {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        &.sub {
+            padding: 5px;
+            min-height: 175px;
+
+            h3 {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .price_cnt {
+        width: 100%;
+        float: left;
+        padding: 15px 0 10px;
+        border-bottom: 1px solid $BMW-grey-lines;
+
+        h3 {
+            font-size: 14px;
+        }
+        .price {
+            font-weight: 600;
+        }
+    }
+    .fin_cnt {
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}
+.pos_relative {
+    position: relative;
+}
+.jp_select_dealer {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+
+ /* Loader added for GCDM calls*/
+.loader_wrp2 {
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    background:rgba(0,0,0,0.5);
+    min-height:350px;
+    text-align:center;
+    padding: 0;
+    display:table;
+    color:#fff;
+    z-index: 99999;
+    top:0;
+    left:0;
+    .loader-mid{
+       text-align:center;
+       display:table-cell;
+       vertical-align:middle;
+    }
+}
+
+/* Dealer portal View config popup */
+.config_popup {
+	.p-dialog {
+		width: 980px;
+		min-height: 400px;
+        max-height: 500px;
+        
+        .p-dialog-content {
+            max-height: 500px;
+        }
+    }
+
+    .acc_wrp {
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+
+        .acc_title {
+            background: $bg-light-grey;
+            width: 100%;
+            float: left;
+            padding: 7px 10px;
+            position: relative;
+            font-size: 16px;
+            font-weight: 600;
+            color: $BMW-grey;
+            cursor: pointer;
+            border: 1px solid $BMW-grey-lines;
+    
+            .arrow {
+                position: absolute;
+                right: 10px;
+                top: 12px;
+                font-size: 16px;
+            }
+    
+            &:hover, &.active {
+                color: $headline-color;
+            }
+        }
+        .acc_cnt {
+            width: 100%;
+            float: left;
+            padding: 10px;
+            border: 1px solid $BMW-grey-lines;
+            border-top: none;
+
+            .image_cnt {
+                min-height: auto;
+                padding-left: 0;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+            .optional_eqp {
+                &.sub {
+                    min-height: 90px;
+                }
+            }
+        }
+    }
+    
+}
+.exclusive-model-pop {
+	.p-dialog {
+		width: 900px;
+		max-height: 85vh;
+		overflow-x: auto;
+		top:72px !important;
+
+	}
+}
+.exclusive-model-pop {
+.p-dialog .p-dialog-content.p-widget-content{
+    height: initial !important ;
+    max-height: initial !important ;
+}
+}
+/* Coupon Code */
+.coupon_code_wrp {
+    width: 100%;
+    display: inline-block;
+    margin: 10px 0 15px;
+    background: $bg-light-grey;
+    padding: 15px;
+
+    label {
+        margin: 0 0 10px;
+        font-family: $BMW-font-Bold;
+    }
+    
+    .coupon_code {
+        width: 100%;
+
+        .textbox {       
+            // height: 35px;
+            background: white;
+            border: none;
+            width: 70%;
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .btn-primary {
+            min-width: 110px;
+            // height: 35px;
+            border: none;
+            padding: 0;
+            opacity: 1;
+            float: right;
+
+            &:disabled {
+                background: $BMW-grey-lines;
+                color: $BMW-grey;
+            }
+        }
+    }
+    .codes_list {
+        width: 100%;
+        margin: 10px 0 0;
+        max-height: 150px;
+        overflow-y: auto;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                padding: 5px 0 10px;
+                border-bottom: 1px solid $BMW-grey-lines;
+                width: 100%;
+
+                .coupon_strike {
+                    text-decoration: line-through;
+                }
+
+                &:last-child {
+                    border: none;
+                }
+                .offer_icon {
+                    font-size: 25px;
+                    display: inline-block;
+                    margin-right: 5px;
+                    top: 6px;
+                    position: relative;
+                }
+                .offer_code {
+                    min-width: 250px;
+                    display: inline-block;
+                }
+                .offer_percent {
+                    display: inline-block;
+                }
+                .remove_code {
+                    color: $error;
+                    font-size: 13px;
+                    position: relative;
+                    top: 12px;                
+                    float: right;
+                    right: 10px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+            }
+        }
+    }
+    .offer_price {
+        width: 100%;
+        display: inline-block;
+        margin: 10px 0 0;
+
+        .font_bold {
+            float:  right;
+        }
+
+        h6 {
+            font-size: 14px;
+            width: 100%;
+            margin-bottom: 15px;
+
+            &.total {
+                margin: 0;
+                border-top: 1px solid $BMW-grey-lines;
+                padding: 15px 0 0;
+                font-family: $BMW-font-Bold;
+            }
+        }
+
+    }
+    
+
+    
+}

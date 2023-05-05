@@ -1,0 +1,1 @@
+//All API endpoints used by this application to be declared here and called from this file 

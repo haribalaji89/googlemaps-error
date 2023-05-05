@@ -1,0 +1,1717 @@
+
+
+
+.sf-stocklocator-root .sf-cf-finance-page .sf-cf-columns {
+    grid-column: 1;
+    grid-row-start: 4;
+    grid-row-end: 2;
+    display: flex;
+    align-items: baseline;
+}
+sf-offer-selection-page .sf-stocklocator-root .sf-cf-finance-product-configuration {
+    margin-top: 0;
+    align-items: baseline;
+}
+.sf-stocklocator-root sf-cf-finance-page .sf-cf-finance-details{
+    align-items: baseline;
+    border-left: 1px solid #666;
+    padding-left: 20px;
+    margin-left: -20px;
+}
+.sf-cf-product-descripsf-offer-selection-page .sf-stocklocator-root .sf-cf-product-description{
+    display: block;
+}
+div.sf-cf-product-description {
+    display: flex;
+    justify-content: left !important;
+}
+.sf-cf-finance-page sf-cf-button .close{margin-top:-130px; position: absolute; top: 0;}
+// New CR-302
+// .sf-cf-spinner > div{
+//   margin-left: 50% !important;
+// }
+
+
+
+@media (max-width: 767px) {
+    .sf-stocklocator-root .sf-cf-finance-page .sf-cf-columns {
+        grid-column: 1;
+        grid-row-start: 4;
+        grid-row-end: 2;
+        display: block;
+        align-items: baseline;
+    }
+    .sf-stocklocator-root sf-cf-finance-page .sf-cf-finance-details{
+        align-items: baseline;
+        border-left: 0;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    sf-cf-finance-product-configuration.sf-cf-market-jp{
+        width: 95% !important;
+      }
+}
+// .sf-stocklocator-root .sf-cf-finance-page .sf-cf-columns {
+//     grid-column: 1;
+//     grid-row-start: 4;
+//     grid-row-end: 5;
+//     align-items: baseline;
+// }
+
+// sf-cf-dialog {
+// 	background-color: rgba(102, 102, 102, 0.7);
+// 	position: absolute;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+// sf-cf-dialog .sf-cf-dialog {
+// 	font-size: 14px;
+// 	background-color: #fff;
+// 	border-radius: 2px;
+// 	outline: 0 !important;
+// }
+
+// sf-cf-dialog .sf-confi-commit,
+// sf-cf-dialog .sf-confi-cancel {
+// 	background-color: #1c69d4;
+// 	color: white;
+// }
+
+// .sf-cf-columns {
+// 	display: flex;
+// 	width: 80%;
+// }
+
+// .sf-cf-finance-product-configuration-view {
+// 	display: flex;
+// 	flex-direction: column;
+// 	margin-right: auto;
+// 	margin-left: auto;
+// }
+
+// .sf-cf-edit-field-container {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	align-items: center;
+// 	font-size: 15px !important;
+// }
+
+// .editFieldContainer,
+// .textareaContainer {
+// 	border-radius: 0px;
+// 	height: auto;
+// 	display: table-row;
+// }
+
+// input#sf-confi-tc-currency {
+// 	min-width: 175px;
+// 	max-width: 175px;
+// 	margin-right: 8px;
+// }
+
+// sf-cf-finance-page {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+// form {
+// 	width: 100%;
+// }
+
+
+// /* The Close Button */
+
+// .close {
+// 	color: #aaaaaa;
+// 	float: right;
+// 	// font-size: 28px;
+// 	font-weight: bold;
+// }
+
+// .close:hover,
+// .close:focus {
+// 	color: #000;
+// 	text-decoration: none;
+// 	cursor: pointer;
+// }
+
+// sf-cf-finance-page section {
+// 	margin: 0 1ex;
+// 	display: flex;
+// 	justify-content: space-between;
+// 	width: 100%;
+// 	align-items: center;
+// 	flex-direction: column;
+// }
+
+// .sf-cf-finance-product-configuration-view sf-cf-select,
+// .sf-cf-finance-product-configuration-view sf-cf-input {
+// 	display: flex;
+// 	justify-content: flex-end;
+// 	align-items: center;
+// 	flex-wrap: wrap;
+// }
+// .sf-cf-finance-product-configuration-view sf-cf-select{
+//     padding: 10px 0 !important;
+// }
+// .sf-cf-columns>* {
+// 	border-left: 1px solid lightgray;
+// 	flex-grow: 1;
+// }
+
+// .sf-cf-columns>*:first-child {
+// 	border-left: none;
+// }
+
+
+// /* body[opened] #test-client-modal-content {
+//     right: 0;
+//     background-color: grey;
+//     z-index: 1;
+// } */
+
+// body[opened] #test-client-modal-content,
+// body[opened] .newModalContainer {
+// 	height: 100vh;
+// 	width: 100vw;
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	background: lightgrey;
+// }
+
+// body[opened] #test-client-modal-content {
+// 	right: 0;
+// 	background-color: grey;
+// 	z-index: 1;
+// }
+
+// .sf-cf-modal[opened] {
+// 	position: relative !important;
+// }
+
+// .sf-cf-x-tracking-info {
+// 	display: none;
+// }
+
+
+// /* Modal Content */
+
+// .modal-content {
+// 	background-color: #fefefe;
+// 	margin: auto;
+// 	padding: 20px;
+// 	border: 1px solid #888;
+// 	max-width: 70vw;
+// 	font-weight: normal;
+// 	// font-size: 11px;
+// 	text-align: left;
+// 	overflow: auto;
+// 	max-height: 90vh;
+// }
+
+// sf-cf-info-icon .modal-content {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// }
+
+// .modal-content.fullscreen {
+// 	min-width: 100%;
+// 	min-height: 100%;
+// 	padding: 0;
+// }
+
+// sf-cf-info-icon {
+// 	background-image: url("assets/images/info-icon.svg");
+// 	background-size: contain;
+// }
+
+// sf-cf-info-icon[disabled] {
+// 	background: transparent;
+// 	overflow: visible;
+// }
+
+// .sf-cf-modal {
+// 	display: none;
+// }
+
+// .sf-cf-modal[opened] {
+// 	display: block;
+// 	position: fixed;
+// 	top: 0;
+// 	z-index: 11;
+// }
+
+// .sf-cf-modal .close:before {
+// 	content: 'x';
+// 	display: block;
+// }
+
+// // sf-cf-tooltip {
+// // 	width: 3ex;
+// // 	height: 3ex;
+// // 	margin-left: 1px;
+// // 	position: relative;
+// // 	cursor: pointer;
+// // 	top: 4px;
+// // 	display: inline-block;
+// // 	overflow: visible;
+// // 	background-image: url("assets/images/info-icon.svg");
+// // 	background-repeat: no-repeat;
+// // 	background-size: contain;
+// // }
+
+
+
+// .sf-cf-summary-parameters {
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	// font-size: 11px;
+// }
+
+// // .sf-cf-title,
+// // .sf-cf-param-group sf-cf-label,
+// // label{
+// //     font-weight: 700;
+// //     font-size: 11px;
+// //     margin-right: 15px;
+// //     display: table-cell;
+// // }
+
+// /* visibile only for screen readers */
+
+// .sf-cf-aria-description {
+// 	border: 0;
+// 	clip: rect(0 0 0 0);
+// 	height: 1px;
+// 	margin: -1px;
+// 	overflow: hidden;
+// 	padding: 0;
+// 	position: absolute;
+// 	width: 1px;
+// }
+
+// sf-cf-finance-product-configuration fieldset {
+// 	border: none;
+// 	padding: 0;
+// 	margin: 0;
+// }
+
+// // .sf-cf-visible {
+// // 	visibility: visible;
+// // }
+
+// // .sf-cf-hidden {
+// // 	visibility: hidden;
+// // }
+
+// .sf-cf-finance-product-overview .contextLayerContentList,
+// .modal-content .contextLayerContentList {
+// 	width: 100%;
+// }
+
+// .modal-content .contextLayerContentKey,
+// .sf-cf-finance-product-overview .contextLayerContentKey {
+// 	display: table-cell;
+// 	vertical-align: top;
+// }
+
+// .modal-content .sf-cf-total-instalment-content,
+// .modal-content .sf-cf-total-instalment-product,
+// .sf-cf-finance-product-overview .sf-cf-total-instalment-content,
+// .sf-cf-finance-product-overview .sf-cf-total-instalment-product {
+// 	/*    display: table-cell;*/
+// }
+
+// .sf-cf-total-instalment-or,
+// .sf-cf-total-instalment-value,
+// .sf-cf-total-instalment-frequency {
+// 	padding-right: 3px;
+// }
+
+// .sf-cf-info,
+// sf-cf-info-icon {
+// 	width: 3ex;
+// 	height: 3ex;
+// 	margin-left: 3px;
+// 	margin-top: -2px;
+// 	position: relative;
+// 	cursor: pointer;
+// 	top: 2px;
+// 	display: inline-block;
+// 	overflow: hidden;
+// 	background-repeat: no-repeat;
+// 	background-image: url("assets/images/info-icon.svg");
+// 	background-size: contain;
+// }
+
+// sf-cf-total-instalment[type='FinancePage'] {
+// 	width: 100%;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+// .sf-cf-total-instalment-content {
+// 	/*    display: inline-table;*/
+// 	display: flex;
+// 	justify-content: left;
+// 	align-items: left;
+// 	flex-wrap: wrap;
+// }
+
+// .sf-cf-total-instalment-content sf-cf-finance-product-name {
+// 	width: 100%
+// }
+
+// .modal-content .contextLayerContentKey,
+// .modal-content .contextLayerContentValue,
+// .sf-cf-finance-product-overview .contextLayerContentKey,
+// .sf-cf-finance-product-overview .contextLayerContentValue {
+// 	text-align: left;
+// 	width: 50%;
+// }
+
+// .modal-content .contextLayerContentValue,
+// .modal-content .sf-cf-total-instalment-product,
+// .sf-cf-finance-product-overview .contextLayerContentValue,
+// .sf-cf-finance-product-overview .sf-cf-total-instalment-product {
+// 	text-align: right;
+// }
+
+// sf-cf-calculator-icon {
+// 	background-image: url("assets/images/calculator-icon.svg");
+// 	background-size: contain;
+// 	width: 30px;
+// 	height: 30px;
+// 	display: inline-block;
+// 	fill: lightgray;
+// 	box-sizing: border-box;
+// }
+
+// sf-cf-calculator-icon:hover {
+// 	fill: #1c69d4;
+// }
+
+// .sf-cf-header-label {
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+// sf-cf-calculator-icon[disabled] {
+// 	display: none
+// }
+
+// sf-cf-finance-calculator[disabled] {
+// 	display: none;
+// }
+
+// sf-cf-finance-calculator[error] {
+// 	display: none;
+// }
+
+// .showcalculator>label {
+// 	// font-size: 14px!important;
+// 	margin-top: -4px !important;
+// 	padding-left: 24px !important;
+// 	outline: 0!important;
+// }
+
+// .showcalculator {
+// 	outline: 0 !important;
+// }
+
+// .showcalculator {
+// 	sf-cf-calculator-icon {
+// 		width: 24px !important;
+// 		height: 23px !important;
+// 		display: inline-block;
+// 		fill: lightgray;
+// 		box-sizing: border-box;
+// 		position: relative;
+// 		top: 28px;
+// 	}
+// 	.sf-cf-label-calculator-icon {
+// 		margin-top: -4px;
+// 		outline: 0 !important;
+// 		font {
+// 			// font-size: 14px;
+// 			outline: 0 !important;
+// 		}
+// 	}
+// }
+// sf-cf-dialog{
+                         
+//     &.visible{
+//     opacity: 1;
+//     visibility: visible;
+//     transform: scale(1);
+//     max-height: 400vh;
+//      transition: visibility 0s linear 0s,opacity .25s 0s,transform .25s;
+//      /* display: block; */
+//     position: fixed !important;
+//     background-color: rgba(20, 0, 0, 0.4);
+//     }
+// }
+
+// .close{
+// line-height: 0 !important;
+//  border: 0 !important;
+//  outline: 0 !important;
+//   }
+     
+
+// #test-client-modal-content {
+// 	position: relative;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     background-color: #fff;
+//     cursor: pointer;
+
+// 	div {
+// 		min-height: 1.5em;
+// 	}
+// 	.sf-cf-modal {
+// 		display: block;
+// 		position: fixed !important;
+// 		background-color: rgba(20, 0, 0, 0.4);
+// 		top: 0;
+// 		z-index: 99999;
+// 		bottom: 0;
+// 		left: 0;
+// 		right: 0;
+// 		margin: 0 auto;
+// 		margin-top: 0px;
+// 		max-width: 100%;
+// 		max-height: 100vh;
+// 		overflow: hidden;
+// 	}
+// 	.modal-content {
+// 		display: flex;
+// 		flex-direction: column;
+// 		overflow-x: hidden !important;
+// 		max-height: 90vh !important;
+// 		margin-top: 30px;
+// 		max-width: 78% !important;
+// 		border: 0 !important;
+// 		outline: 0 !important;
+//         padding-bottom: 0 !important;
+
+// 		input[type="text"],
+// 		input[type="password"],
+// 		input[type="file"],
+// 		input[type="submit"],
+// 		a[type="button"],
+// 		input[type="button"],
+// 		input[type="reset"],
+// 		select,
+// 		textarea,
+// 		.textarea,
+// 		.aui-field-input-text {
+// 		border: 1px solid;
+// 		border-color: #dedede;
+// 		padding: 3px 5px;
+// 		margin: 3px 8px;
+// 		}
+
+// 		.info{
+// 			width: 3ex;
+// 			height: 3ex;
+// 			margin-left: 3px;
+// 			margin-top: -2px;
+// 			position: relative;
+// 			cursor: pointer;
+// 			top: 2px;
+// 			display: inline-block;
+// 			overflow: hidden;
+// 			background-repeat: no-repeat;
+// 			background-image: url("assets/images/info-icon.svg");
+// 			background-size: contain;
+// 		}
+// 		h3{
+// 			font-size: 32px;
+// 			line-height: 42px;
+// 			display: block;
+// 			float: left;
+// 			text-align: left;
+// 			width: 100%;
+// 			margin-bottom: 0;
+// 		}
+// 		h4 {
+// 			font-size: 24px!important;
+// 			line-height: 30px;
+// 		}
+
+// 		sf-cf-select{
+// 			padding: 10px 0 !important;
+			
+// 		}
+// 		.sf-cf-finance-product{
+// 			.sf-cf-edit-field-container{
+// 				font-size: 20px !important;
+
+// 				select{
+// 					float: left !important;
+// 					display: none !important;
+// 					line-height: 36px !important;
+// 				}
+// 				input{
+// 					line-height: 36px !important;
+// 				}
+// 				label{
+// 					padding: 10px 0 0 !important;
+
+// 				}
+// 			}
+// 		}
+
+
+// 		sf-cf-dialog {
+// 			&.visible {
+// 				opacity: 1;
+// 				visibility: visible;
+// 				transform: scale(1);
+// 				max-height: 400vh;
+// 				transition: visibility 0s linear 0s, opacity .25s 0s, transform .25s;
+// 				/* display: block; */
+// 				position: fixed !important;
+// 				background-color: rgba(20, 0, 0, 0.4);
+// 			}
+// 			.sf-cf-dialog {
+// 					min-width: fit-content !important; 
+// 			}
+// 		}
+//         .sf-cf-finance-details{
+//             padding-left: 10px;
+//         }
+
+// 		button {
+// 			margin: 0 !important;
+// 		}
+
+// 		.close {
+// 			line-height: 0 !important;
+// 			border: 0 !important;
+// 			outline: 0 !important;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center ;
+//             position: absolute;
+//             top: 30px;
+//             right: 0;
+//             width: 50px;
+//             height: 50px;
+//             margin: 0;
+//             background: rgba(255, 255, 255, 0.7);
+//             cursor: pointer;
+//         }
+// 		input[type="text"],
+// 		input[type="password"],
+// 		input[type="file"],
+// 		input[type="submit"],
+// 		a[type="button"],
+// 		input[type="button"],
+// 		input[type="reset"],
+// 		select,
+// 		textarea,
+// 		.textarea,
+// 		.aui-field-input-text {
+// 			border: 1px solid;
+// 			border-color: #dedede;
+// 			padding: 3px 5px;
+// 			margin: 3px 8px;
+// 		}
+
+// 		.sf-cf-info-icon.popup [show] .sf-cf-popup {
+// 			display: block;
+// 		}
+// 		.sf-cf-info-icon.popup:hover sf-cf-popup {
+// 			display: block;
+// 		}
+
+		
+// 		sf-cf-popup:not([show]) {
+// 				display: none;
+// 				padding:15px;
+// 			}
+
+
+// 		.sf-cf-info-icon.popup .sf-cf-popup {
+// 			// max-height: 8.5em;
+// 			overflow-x: hidden;
+// 			overflow-y: hidden;
+// 			-webkit-overflow-scrolling: touch;
+// 		}
+
+// 		.sf-cf-input .sf-cf-info-icon .sf-cf-popuptext{
+// 			transform: translateY(calc(100% + 15px));
+// 		}
+// 		.sf-cf-edit-field-container .sf-cf-info-icon .sf-cf-popuptext {
+// 			transform: translateY(calc(100% + 15px));
+// 		}
+// 		.sf-cf-finance-details .sf-cf-content-key .sf-cf-info-icon:before {
+// 						top: calc(34px - 5px + 10px);
+
+
+// 		}
+// 		.sf-cf-finance-details .sf-cf-content-key .sf-cf-info-icon.popup sf-cf-popup {
+// 					top: calc(34px - 5px + 10px);
+// 		}
+
+// 		// .sf-cf-info-icon.popup sf-cf-popup {
+// 		// color: #262626;
+// 		// 	position: absolute;
+// 		// 	z-index: 100;
+// 		// 	top: calc(34px + 5px);
+// 		// 	// left: 0;
+// 		// 	display: none;
+// 		// 	width: 100%;
+// 		// 	padding: 0 15px;
+// 		// 	border-radius: 3px;
+// 		// 	// box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 0 15px 0 rgba(0, 0, 0, 0.2);
+// 		// 	background-color: #fff;
+// 		// 	color: #262626;
+// 		// 	cursor: initial;
+// 		// }
+
+// 		.sf-cf-finance-details .sf-cf-content-key .sf-cf-info-icon:before {
+// 					top: calc(34px - 5px + 10px);
+// 				}
+// 				.sf-cf-info-icon.popup:hover::before {
+// 					content: "";
+// 					position: absolute;
+// 					z-index: 101;
+// 					top: calc(34px - 10px);
+// 					border: 10px solid;
+// 					margin-left: 0px;
+// 					border-color: transparent transparent #fff transparent;
+					
+
+// 				}
+	
+
+
+// 		.info{
+// 			width: 3ex;
+// 			height: 3ex;
+// 			margin-left: 3px;
+// 			margin-top: -2px;
+// 			position: relative;
+// 			cursor: pointer;
+// 			top: 2px;
+// 			display: inline-block;
+// 			overflow: hidden;
+// 			background-repeat: no-repeat;
+// 			background-image: url("assets/images/info-icon.svg");
+// 			background-size: contain;
+// 		}
+		
+// 		sf-cf-button {
+
+// 			button {
+// 				padding: 8px 15px !important;
+// 				border: 0 ;
+// 				outline: 0 ;
+// 				margin: 7px 0 !important;
+// 				// font-size: 14px;
+// 			}
+// 			button, input[type="button"], input[type="button"]:active, .button {
+// 				color: #fff;
+// 				position: relative;
+// 				display: block;
+// 				box-sizing: border-box;
+// 				width: 285px;
+// 				height: 50px ;
+// 				padding: 20px;
+// 				border: none;
+// 				outline: none;
+// 				cursor: pointer;
+// 				// transform 0.1s ease-in-out, color 0.1s ease-in-out, background 0.1s ease-in-out;
+// 				-webkit-user-select: none;
+// 				-moz-user-select:none;
+// 				-ms-user-select: none;
+// 				user-select: none;
+// 				margin-top: 0;
+// 			}
+// 		}
+// 		sf-cf-error-message[show] {
+// 			padding: 10px;
+// 			padding-left: 35px;
+// 			background-color: #ffad1f;
+// 			background-image: url('data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjExIiBzdHJva2U9IiNmZmFkMWYiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNmZmFkMWYiIGQ9Ik0xMSAxNGgyVjdoLTJ2N3ptMCA0aDJ2LTJoLTJ2MnptMS0xOEM1LjM3MyAwIDAgNS4zNzMgMCAxMnM1LjM3MyAxMiAxMiAxMiAxMi01LjM3MyAxMi0xMlMxOC42MjcgMCAxMiAweiI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4K');
+// 			background-position-x: 10px;
+// 			background-position-y: center;
+// 			background-size: 24px;
+// 			background-repeat: no-repeat;
+// 			color:#262626;
+// 			display: flex;
+// 			box-sizing: border-box;
+// 			align-items: center;
+// 			flex-direction: row;
+// 			min-height: auto;
+// 			margin-top: 5px;
+// 			margin-bottom: 30px;
+// 			width: 100%;
+// 		}
+// 		sf-cf-product-swipe {
+// 			display: inline-grid;
+// 			grid-template-columns: 33% 66%;
+// 			grid-column-gap: 15px;
+// 			width: 100%;
+// 			margin-bottom: 30px;
+
+//             .sf-cf-slide{
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+
+//                 sf-cf-product-option {
+// 					visibility: visible;
+// 					box-sizing: border-box;
+// 					width: 100%;
+// 					height: 100%;
+// 					overflow: hidden;
+// 					width: 100%;
+// 					border: 2px solid #e6e6e6;
+
+// 					.sf-cf-product-box {
+// 						display: flex;
+// 						flex-direction: column;
+// 						flex-grow: 1;
+// 						padding: 15px 15px 15px 5px;
+
+// 						.sf-cf-product-header {
+// 							color: #262626;
+// 							word-break: break-word;
+// 							overflow-wrap: break-word;
+// 							position: relative;
+// 							padding-bottom: 0px;
+// 							border-bottom: 2px solid #e6e6e6;
+// 							margin: 0;
+//                              font-size: 16px!important;
+
+// 							input[type=checkbox] {
+// 								-webkit-appearance: none;
+// 								display: flex;
+// 								align-items: center;
+// 								justify-content: center;
+// 								-webkit-user-select: none;
+// 								-moz-user-select: none;
+// 								-ms-user-select: none;
+// 								user-select: none;
+// 								position: absolute;
+// 								z-index: 0;
+// 								top: 0;
+// 								right: 11px;
+// 								width: 50px;
+// 								height: 50px;
+// 								box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+// 								background-image: url('data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9InBvaW50ZXItZXZlbnRzOiBub25lOyBkaXNwbGF5OiBibG9jazsgd2lkdGg6IDEwMCU7IGhlaWdodDogMTAwJTsiID4KICAgIDxkZWZzPgogICAgICAgIDxtYXNrIGlkPSJNYXNrIj4KICAgICAgICAgICAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZiIgLz4KICAgICAgICAgICAgPHBvbHlsaW5lIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBmaWxsPSJub25lIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMC4zNzM4ODIsIDguNzYyOTY5KSByb3RhdGUoLTMxNS4wMDAwMDApIHRyYW5zbGF0ZSgtMTAuMzczODgyLCAtOC43NjI5NjkpICIgcG9pbnRzPSI3Ljk5ODkzOTA2IDEzLjk4Nzg0MjcgMTIuNzQ4ODI0MyAxMy45ODc4NDI3IDEyLjc0ODgyNDMgMy41MzgwOTUyMyI+PC9wb2x5bGluZT4KICAgICAgICA8L21hc2s+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9IndoaXRlIiBtYXNrPSJ1cmwoI01hc2spIiAvPgo8L3N2Zz4K');
+// 								background-position: center center;
+// 								background-size: contain;
+// 								background-repeat: no-repeat;
+// 								cursor: pointer;
+
+// 								&:checked {
+// 									background-color: #1c69d4;
+// 								}
+// 							}
+
+// 							.sf-cf-productname {
+// 								margin-bottom: 15px !important;
+// 								line-height: 30px !important;
+// 								font-size: 16px !important;
+// 								padding-left: 0;
+// 							}
+// 							sf-cf-total-instalment {
+// 								display: block;
+// 								min-height: 2.1em;
+// 								.sf-cf-total-instalment {
+// 									margin: 0;
+// 									.sf-cf-total-instalment-content {
+// 										color: #262626;
+// 										word-break: break-word;
+// 										overflow-wrap: break-word;
+// 										display: flex;
+// 										flex-wrap: wrap;
+// 										align-items: center;
+// 										font-size: 18px;
+// 										line-height: 30px;
+// 									}
+// 								}
+// 								.sf-cf-spinner {
+// 									display: none;
+// 								}
+// 								.sf-cf-product-header {
+// 									color: #262626;
+// 									word-break: break-word;
+// 									;
+// 									overflow-wrap: break-word;
+// 									position: relative;
+// 									padding-bottom: 10px;
+// 									border-bottom: 2px solid #e6e6e6;
+// 									margin: 0;
+// 								}
+// 							}
+                            
+// 						}
+//                         .sf-cf-product-description{
+//                             clear: both;
+//                             margin: 15px 0 0;
+//                         }
+// 					}
+// 				}
+
+//             }
+
+// 			.sf-cf-grid-container {
+// 				display: grid;
+// 				grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+// 				grid-column-gap: 15px;
+// 				width: 100%;
+// 				padding: 0;
+// 				margin: 0;
+
+// 				sf-cf-product-option {
+// 					visibility: visible;
+// 					box-sizing: border-box;
+// 					width: 100%;
+// 					height: 100%;
+// 					overflow: hidden;
+// 					width: 100%;
+// 					border: 2px solid #e6e6e6;
+// 					font-size: 16px;
+
+// 					.sf-cf-product-box {
+// 						display: flex;
+// 						flex-direction: column;
+// 						flex-grow: 1;
+// 						padding: 15px 15px 15px 5px;
+
+// 						.sf-cf-product-header {
+// 							color: #262626;
+// 							word-break: break-word;
+// 							overflow-wrap: break-word;
+// 							position: relative;
+// 							padding-bottom: 10px;
+// 							border-bottom: 2px solid #e6e6e6;
+// 							margin: 0;
+
+// 							input[type=checkbox] {
+// 								-webkit-appearance: none;
+// 								display: flex;
+// 								align-items: center;
+// 								justify-content: center;
+// 								-webkit-user-select: none;
+// 								-moz-user-select: none;
+// 								-ms-user-select: none;
+// 								user-select: none;
+// 								position: absolute;
+// 								z-index: 0;
+// 								top: 0;
+// 								right: 11px;
+// 								width: 50px;
+// 								height: 50px;
+// 								box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+// 								background-image: url('data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9InBvaW50ZXItZXZlbnRzOiBub25lOyBkaXNwbGF5OiBibG9jazsgd2lkdGg6IDEwMCU7IGhlaWdodDogMTAwJTsiID4KICAgIDxkZWZzPgogICAgICAgIDxtYXNrIGlkPSJNYXNrIj4KICAgICAgICAgICAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZiIgLz4KICAgICAgICAgICAgPHBvbHlsaW5lIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2U9ImJsYWNrIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIiBmaWxsPSJub25lIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMC4zNzM4ODIsIDguNzYyOTY5KSByb3RhdGUoLTMxNS4wMDAwMDApIHRyYW5zbGF0ZSgtMTAuMzczODgyLCAtOC43NjI5NjkpICIgcG9pbnRzPSI3Ljk5ODkzOTA2IDEzLjk4Nzg0MjcgMTIuNzQ4ODI0MyAxMy45ODc4NDI3IDEyLjc0ODgyNDMgMy41MzgwOTUyMyI+PC9wb2x5bGluZT4KICAgICAgICA8L21hc2s+CiAgICA8L2RlZnM+CiAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIGZpbGw9IndoaXRlIiBtYXNrPSJ1cmwoI01hc2spIiAvPgo8L3N2Zz4K');
+// 								background-position: center center;
+// 								background-size: contain;
+// 								background-repeat: no-repeat;
+// 								cursor: pointer;
+
+// 								&:checked {
+// 									background-color: #1c69d4;
+// 								}
+// 							}
+
+// 							.sf-cf-productname {
+// 								margin-bottom: 15px !important;
+// 								padding-right: 50px;
+// 								padding-left: 0;
+// 							}
+// 							sf-cf-total-instalment {
+// 								display: block;
+// 								min-height: 2.1em;
+// 								.sf-cf-total-instalment {
+// 									margin: 0;
+// 									.sf-cf-total-instalment-content {
+// 										color: #262626;
+// 										word-break: break-word;
+// 										overflow-wrap: break-word;
+// 										display: flex;
+// 										flex-wrap: wrap;
+// 										align-items: center;
+// 									}
+// 								}
+// 								.sf-cf-spinner {
+// 									display: none;
+// 								}
+// 								.sf-cf-product-header {
+// 									color: #262626;
+// 									word-break: break-word;
+// 									;
+// 									overflow-wrap: break-word;
+// 									position: relative;
+// 									padding-bottom: 10px;
+// 									border-bottom: 2px solid #e6e6e6;
+// 									margin: 0;
+// 								}
+// 							}
+                            
+// 						}
+//                         .sf-cf-product-description{
+//                             clear: both;
+//                             margin: 15px 0 0;
+// 							justify-content: left;
+//                         }
+// 					}
+// 				}
+// 				.sf-cf-swipe {
+// 					grid-column: 2;
+
+// 					.singleproduct {
+// 						position: relative;
+// 						visibility: visible;
+//                         width: 100% !important;
+
+// 						.sf-cf-grid-container {
+// 							display: grid;
+// 							grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+// 							grid-column-gap: 15px;
+// 							width: 100%;
+// 							padding: 0;
+// 							margin: 0;
+
+// 							.sf-cf-product-name{
+// 								font-size: 16px !important;
+// 							}
+
+// 							sf-cf-product-option {
+// 								visibility: visible;
+// 								box-sizing: border-box;
+// 								width: 100%;
+// 								height: 100%;
+// 								overflow: hidden;
+// 								border: 2px solid #e6e6e6;
+// 								background: #fff;
+
+// 								.sf-cf-product-box {
+// 									display: flex;
+// 									flex-direction: column;
+// 									flex-grow: 1;
+// 									padding: 15px;
+
+// 									.sf-cf-product-name{
+// 										font-size: 16px !important;
+// 									}
+// 								}
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+//         }
+// 			.sf-cf-buttons {
+// 				position: sticky;
+// 				position: -webkit-sticky;
+// 				z-index: 1;
+// 				bottom: 0;
+// 				display: flex;
+// 				padding: 15px 0;
+// 				margin: 15px 0;
+// 				background: #fff;
+// 				transition: transform 0.2s ease-in-out;
+// 				grid-area: buttons;
+// 				z-index: 0;
+// 				display: flex;
+// 				flex-direction: row;
+// 				justify-content: flex-end;
+
+
+// 				sf-cf-button[type='cancel'] {
+// 					margin-right: 10px;
+//                     .sf-confi-cancel{
+//                         border: 1px solid #262626 !important;
+//                         background-color: rgba(255, 255, 255, 0.7);
+//                         color: #262626 !important;
+//                     }
+// 				}
+// 				sf-cf-button {
+// 					box-sizing: border-box;
+// 					flex-grow: 1;
+// 					flex-basis: 0;
+                    
+// 					&:before {
+// 						content: '';
+// 						position: absolute;
+// 						z-index: 1;
+// 						top: 0;
+// 						left: 50%;
+// 						display: block;
+// 						width: 100%;
+// 						height: 100%;
+// 						transform: translateX(-50%);
+// 						pointer-events: none;
+// 					}
+// 					.sf-confi-cancel {
+// 						border: 1px solid #262626 !important;
+// 						background-color: rgba(255, 255, 255, 0.7);
+// 						color: #262626;
+// 					}
+// 				}
+// 			}
+// 			.sf-confi-commit {
+// 				background-color: #1c69d4;
+// 				color: #fff;
+// 			}
+// 		}
+// 	}
+
+// 	sf-cf-dialog > .sf-cf-dialog {
+// 		grid-template-areas:
+// 			'title close'
+// 			'content content'
+// 			'buttons buttons';
+// 		grid-template-columns: calc(100% - var(--icon-size-xl)) min-content;
+// 		grid-row-gap: 15px;
+// 		box-sizing: border-box;
+// 		max-width: 50%;
+// 		padding: 0;
+// 		background: #fff;
+// 		position: relative;
+// 	}
+
+// 	.sf-confi-commit {
+// 		background: $BMW-Blue;
+// 		color: #fff;
+// 	}
+// 	.sf-cf-columns {
+// 		width: 100% !important;
+// 		text-align: left!important;
+//         align-items: flex-start !important;
+// 	}
+// 	.sf-cf-product-description{
+// 		display: flex;
+// 		justify-content: left !important;
+// 	}
+// 	.sf-cf-description{
+// 		font-size: 16px;
+// 		line-height: 1.5em;
+// 		padding-bottom: 10px;
+// 		padding-left: 5px;
+// 	}
+// 	.sf-cf-productname{
+// 		font-size: 24px !important;
+// 		line-height: 30px;
+// 		padding-left: 10px;
+
+// 	}
+// 	 .sf-cf-product-description{
+// 		font-size: 16px !important;
+// 	 }
+// 	.sf-cf-total-instalment-content{
+// 		 font-size: 20px;
+// 		line-height: 30px;
+// 		padding-left: 10px;
+// 	}
+// 	[show] .sf-cf-popup {
+// 		width: 100% !important;
+// 		background-color:#fff !important;
+// 		color: #262626;
+// 		text-align: left;
+// 		border-radius: 0px;
+// 		padding: 0;
+// 		position: relative;
+// 		z-index: 99;
+// 		bottom: auto;
+// 		left: auto;
+// 		margin-left: 0;
+// 		white-space: normal;
+// 		padding-left: 0;
+// 		padding-bottom: 6px;
+// 	}
+	
+
+// 	sf-cf-total-instalment[type=FinancePage] {
+// 		width: 100%;
+// 		display: flex;
+// 		justify-content: left;
+// 		align-items: left;
+// 	}
+// 	.sf-cf-edit-field-container {
+// 		display: block !important;
+// 		width: 100% !important;
+// 		label,
+// 		input,
+// 		select {
+// 			display: flex !important;
+// 			width: 100% !important;
+// 			float: left!important;
+// 			line-height: 27px;
+// 			font-size: 20px;
+// 			max-width: 285px;
+// 			margin-left: 0 !important;
+// 			padding: 10px 0 !important;
+// 		}
+// 		select {
+// 			padding: 10px 0 !important;
+// 		}
+// 		sf-cf-product-swipe {
+// 			.sf-cf-grid-container {
+// 				padding: 0 3ex !important;
+// 				.sf-cf-product-description {
+// 					padding-top: 10px;
+// 					border-top: 2px solid #e6e6e6;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.sf-cf-popup .sf-cf-popuptext::after{
+// 		display:none !important;
+// 	}
+
+// 	.sf-cf-finance-product {
+// 		.sf-cf-product-details {
+// 			padding-left: 30px;
+// 			.sf-cf-summary-parameters {
+// 				width: 100% !important;
+// 				width: calc(100% - 60px);
+// 			}
+// 		}
+// 		sf-cf-dialog{
+// 			sf-cf-button{
+// 				button{
+// 				&.sf-confi-cancel {
+// 					border:1px solid #262626 !important;
+// 					background-color: rgba(255, 255, 255, 0.7);
+// 					color: #262626  !important;
+// 				}
+// 			}
+// 			}
+// 			sf-cf-button[type='cancel'] {
+// 				margin: 0 10px;
+// 			}
+// 			.sf-cf-button-container {
+// 				grid-area: buttons;
+// 				display: flex;
+// 				flex-direction: row-reverse;
+// 				justify-content: right;
+// 				padding: 15px 30px;
+// 				border-top: 1px solid #e6e6e6;
+
+// 				.sf-confi-commit {
+// 					background-color:#1c69d4;
+// 					color: #fff;
+// 				}
+// 			}
+// 			sf-cf-button[type='close']{
+// 				.close {
+// 					box-shadow: initial;
+// 				}
+
+// 			} 
+		
+
+// 		}
+	
+// 		.sf-cf-dialog{
+
+// 			.sf-cf-dialog-title {
+// 				color: #262626;
+// 				word-break: break-word;
+// 				overflow-wrap: break-word;
+// 				grid-area: title;
+// 				box-sizing: border-box;
+// 				height: 100%;
+// 				padding: 10px 0 0 30px;
+// 				margin: 0;
+// 			}
+// 			.sf-cf-dialog-content{
+// 				padding: 40px 20px 30px 20px;
+// 			}
+		
+
+// 			.close {
+// 				line-height: 0!important;
+// 				border: 0!important;
+// 				outline: 0!important;
+// 				display: inherit !important;
+// 				align-items: center;
+// 				justify-content: center;
+// 				position: relative;
+// 				top: 20px!important;
+// 				right: 10px !important;
+// 				width: auto !important;
+// 				height: auto !important;
+// 				margin: 0;
+// 				background: rgba(255,255,255,.7);
+// 				cursor: pointer;
+// 			}
+// 			.sf-confi-commit{
+// 				button{
+// 					width: auto !important;
+// 					height: auto !important;
+// 					display: inherit !important;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	sf-cf-error-message[show] li {
+// 		display: block;
+// 	}
+// 	sf-cf-error-message[show] li::before {
+// 		content: '- ';
+// 	}
+// 	sf-cf-finance-page {
+// 		section {
+// 			align-items: initial;
+// 		}
+// 	}
+// 	.sf-cf-disclaimer {
+// 		padding-bottom: 10px;
+// 		line-height: 1.4em;
+// 		font-size: 16px;
+// 	}
+// 	:focus {
+// 		border: 0 !important;
+// 		outline: 0 !important;
+// 	}
+// 	input:focus,
+// 	select:focus,
+// 	textarea:focus {
+// 		border: 1px solid #bbb !important;
+// 		outline-color: 1px solid #bbb !important;
+// 	}
+//     sf-cf-product-swipe .singleproduct {
+//         visibility: visible;
+//         position: relative;
+//         float: none !important;
+//     }
+// 	sf-cf-product-swipe .sf-cf-productname{
+// 		font-size: 16px !important;
+// 	}
+// 	sf-cf-finance-page .sf-cf-finance-details .sf-cf-summary-parameters {
+// 		margin-bottom: 15px;
+// 	}
+// 	.sf-cf-finance-details .sf-cf-summary-parameters {
+// 		width: calc(100% - 30px);
+// 		margin-top: 30px;
+
+// 	}
+// 	sf-cf-finance-services-configuration .sf-cf-content-key-value, .sf-cf-finance-details .sf-cf-summary-parameters > tbody > * {
+// 		position: relative;
+// 		box-sizing: border-box;
+// 		padding: 0 calc(15px / 2);
+
+// 	}
+
+// 	sf-cf-finance-services-configuration .sf-cf-content-key-value, .sf-cf-finance-details .sf-cf-content-key-value {
+// 		flex: 0 0 50%;
+// 		width: 50%;
+//     	display: inline-block;
+// 	}
+// 	sf-cf-finance-services-configuration .sf-cf-content-key, .sf-cf-finance-details .sf-cf-content-key {
+// 		color: #262626;
+// 		position: relative;
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		padding: 10px 0;
+// 		border-top: 1px solid #e6e6e6;
+// 		// line-height: 27px;
+// 		font-size: 16px;
+// 	}
+// 	sf-cf-finance-services-configuration .sf-cf-content-value, .sf-cf-finance-details .sf-cf-content-value {
+// 		word-break: break-word;
+// 		overflow-wrap: break-word;
+// 		display: block;
+// 		padding-bottom: 10px ;
+// 		color: #262626;
+// 		font-size: 20px;
+// 	}
+// 	sf-cf-finance-page > div.sf-cf-columns, sf-cf-finance-page > section.sf-cf-finance-product-configuration {
+// 		grid-area: product-configuration;
+// 	}
+// 	sf-cf-info-icon, sf-cf-video-icon, .sf-cf-info-icon {
+// 		display: block;
+// 		box-sizing: content-box;
+// 		width: 24px;
+// 		height: 24px;
+// 		padding: 0 0 0 10px;
+// 		margin: 0 ;
+// 		background: 5px 0 url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjExIiBzdHJva2U9IiNCQkIiIHN0cm9rZS13aWR0aD0iMiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiM0RDRENEQiIGQ9Ik0xMSAxNi4wOWgxLjgxOHYtNS41NTVIMTF2NS41NTZ6bTAtNy4yNzJoMS44MThWN0gxMXYxLjgxOHoiLz4KICAgIDwvZz4KPC9zdmc+') no-repeat;
+// 		background-size: 24px;
+// 		cursor: pointer;
+// 	}
+// 	sf-cf-tooltip{
+// 		float: left;
+// 	}
+// 	sf-cf-tooltip .sf-cf-popup {
+// 		position: relative;
+// 		padding-left: 0;
+// 	}
+// 	.sf-cf-info-icon.popup sf-cf-popup{
+// 		color: #262626;
+// 		position: absolute;
+// 		z-index: 100;
+// 		top: calc(34px + 5px);
+// 		left: 0;
+// 		display: none;
+// 		width: 100%;
+// 		padding: 15px;
+// 		border-radius: 3px;
+// 		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 0 15px 0 rgba(0, 0, 0, 0.2);
+// 		background-color: #fff;
+// 		color: #262626;
+// 		cursor: initial;
+
+// 	}
+// 	.sf-cf-info-icon.popup:hover sf-cf-popup{
+// 		color: #262626;
+// 		position: absolute;
+// 		z-index: 100;
+// 		top: calc(34px + 5px);
+// 		left: 0;
+// 		display: none;
+// 		width: 100%;
+// 		padding: 15px;
+// 		border-radius: 3px;
+// 		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 0 15px 0 rgba(0, 0, 0, 0.2);
+// 		background-color: #fff;
+// 		color: #262626;
+// 		cursor: initial;
+// 		visibility: visible;
+
+// 	}
+// 	.sf-cf-info-icon.popup:hover sf-cf-popup:hover sf-cf-popuptext{
+// 		color: #262626;
+// 		position: absolute;
+// 		z-index: 100;
+// 		top: calc(34px + 5px);
+// 		left: 0;
+// 		display: none;
+// 		width: 100%;
+// 		padding: 15px;
+// 		border-radius: 3px;
+// 		box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2), 0 0 15px 0 rgba(0, 0, 0, 0.2);
+// 		background-color: #fff;
+// 		color: #262626;
+// 		cursor: initial;
+// 		visibility: visible;
+
+// 	}
+// 	sf-cf-dialog .sf-cf-button-container {
+// 		grid-area: buttons;
+// 		display: flex;
+// 		flex-direction: row-reverse;
+// 		justify-content: right;
+// 		padding: 15px 30px;
+// 		border-top: 1px solid #e6e6e6;
+// 	}
+
+// 	sf-cf-button {
+// 		box-sizing: border-box;
+// 		flex-grow: 1;
+// 		flex-basis: 0;
+// 	}
+// 	.sf-cf-buttons::before {
+// 		content: '';
+// 		position: absolute;
+// 		z-index: 1;
+// 		top: 0;
+// 		left: 50%;
+// 		display: block;
+// 		width: 100%;
+// 		height: 100%;
+// 		border-top: 1px solid #e6e6e6;
+// 		transform: translateX(-50%);
+// 		pointer-events: none;
+// 	}
+
+// 	sf-cf-product-details[type="disclaimer"] .sf-cf-title {
+// 		margin-top: 30px ;
+// 		margin-bottom: 15px;
+// 	}
+// 	.sf-cf-edit-field-container input, .sf-cf-edit-field-container label, .sf-cf-edit-field-container select{
+// 		float: left;
+// 	}
+// 	.sf-cf-edit-field-container label{
+// 		padding: 10px 0 0 !important;
+// 	}
+// 	sf-cf-label {
+// 		float: left;
+// 	}
+
+
+// 	@media (max-width: 1200px) {
+
+// 		#test-client-modal-content {
+			
+// 			div {
+// 				min-height: 1.5em;
+// 			}
+// 			.modal-content {
+// 				position: relative;
+// 				display: flex;
+// 				min-height: 100%;
+// 				background-color: #fff;
+// 				cursor: default;
+// 				flex-direction: column;
+// 				padding: 0 30px 30px;
+
+// 				.sf-cf-finance-product{
+// 					.sf-cf-edit-field-container{
+// 						font-size:20px !important; 
+
+
+// 					}
+// 				}
+
+// 			}
+// 		}
+// 	}
+// 	@media screen and (min-width: 1024px) {
+		
+
+// 		sf-cf-button {
+// 			max-width: 285px;
+// 		}
+// 		.sf-cf-buttons::before {
+// 			width: 78.125vw;
+// 			max-width: 1245px;
+// 		}
+// 	}
+// 	@media screen and (max-width: 1023px) {
+
+// 		#test-client-modal-content {
+// 			div {
+// 				min-height: 1.5em;
+// 			}
+// 			.modal-content {
+
+// 				h4 {
+// 					font-size: 20px!important;
+// 					line-height: 30px;
+// 					padding-top: 30px;
+// 				}
+// 				.sf-cf-finance-product{
+// 					.sf-cf-edit-field-container{
+
+// 						select{
+// 							display: block !important;
+// 						}
+// 					}
+// 				}
+
+// 				.sf-cf-columns {
+// 					display: block!important;
+// 				}
+// 				sf-cf-product-swipe {
+// 					display: none ;
+// 				}
+
+// 			}
+// 		}
+// 		sf-cf-button {
+// 			max-width: 285px;
+// 		}
+// 		.sf-cf-edit-field-container input, .sf-cf-edit-field-container label, .sf-cf-edit-field-container select{
+// 			display: block !important;
+//     		width: 100% !important;
+// 			float: none !important;
+// 			margin-bottom: 10px;
+
+// 		}
+// 	}
+// 	@media (max-width: 767px) {
+// 		.sf-cf-info-icon, sf-cf-info-icon, sf-cf-video-icon{
+// 			height: 30px !important;
+// 			width: 30px !important;
+// 		}
+
+// 		h4.sf-cf-finance-page-adjust-financing{
+// 			display: none;
+// 		}
+// 		#test-client-modal-content .modal-content .sf-cf-columns>*{
+// 			margin: 0;
+// 		}
+// 		.sf-cf-finance-product sf-cf-dialog sf-cf-button[type=cancel] {
+// 			margin: 0;
+// 		}
+// 		#test-client-modal-content .modal-content sf-cf-dialog .sf-cf-dialog {
+// 			min-height: auto;
+// 		}
+
+		
+// 		.sf-cf-description{
+// 			font-size: 20px;
+// 		}
+// 		.sf-cf-productname{
+// 			font-size: 20px !important;
+// 			padding-bottom: 15px;
+	
+// 		}
+// 		.sf-cf-product-description{
+// 			font-size: 16px !important;
+// 		}
+// 		.sf-cf-total-instalment-content{
+// 			 font-size: 20px;
+// 		}
+// 		#test-client-modal-content {
+// 			div {
+// 				min-height: 1.5em;
+// 			}
+	
+
+// 			.modal-content {
+// 				margin-top: 0 !important;
+// 				max-height: 100vh!important;
+// 				max-width: 100% !important;
+
+// 				h3{
+// 					font-size: 24px !important;
+// 				}
+// 				h4 {
+// 					font-size: 18px !important;
+// 					line-height: 30px;
+// 					padding-top: 30px;
+// 				}
+
+// 				sf-cf-button {
+
+// 					button {
+// 						width: 100% !important;
+// 						font-size: 14px;
+// 						min-height: auto;
+// 					}
+// 				}
+// 				sf-cf-dialog .sf-cf-button-container {
+// 					flex-direction: column-reverse;
+// 					justify-content: center;
+// 					align-items: stretch;
+// 				}
+			
+
+// 				sf-cf-dialog {
+// 					.sf-cf-dialog {
+// 						min-width: 100px !important;
+// 						max-width: 100%;
+// 					}
+// 				}
+// 				.sf-cf-dialog-title {
+// 					padding-top: 15px;
+// 				}
+// 				.sf-cf-columns {
+// 					display: block!important;
+// 				}
+//                 .sf-cf-finance-details{
+//                     padding-left: 0px;
+//                 }
+
+//                 // sf-cf-product-swipe {
+//                 //     display: block !important;
+//                 //     width: 100% !important;
+//                 //     margin-top: 30px !important;
+//                 // }
+//                 .sf-cf-grid-container{
+//                     display: block !important;
+//                     margin-top: 30px !important;
+//                 }
+//                 section.sf-cf-buttons {
+//                     flex-direction: column;
+
+//                     sf-cf-button[type='cancel'] {
+//                         margin-right: 0;
+//                         margin-bottom: 10px ;
+//                     }
+//                     sf-cf-button{
+//                         min-height: 50px !important;
+//                         display: block;
+//                         width: 100%;
+// 						max-width: 100%;
+
+//                      button{
+//                         width: 100%;
+//                     }
+//                 }
+//                 }
+//                 .sf-cf-product-box{
+//                     border: 2px solid #e6e6e6;
+//                     margin-bottom: 20px;
+//                     margin-left: 0;
+//                 }
+//                 .sf-cf-edit-field-container {
+//                     display: block !important;
+//                     width: 100% !important;
+//                     label,
+//                     input,
+//                     select {
+//                         max-width: 100%;
+//                         width: 100%;
+//                     }
+// 					h3{
+// 						font-size: 24px;
+// 						line-height: 36px;
+
+// 					}
+
+
+                   
+                    
+// 			}
+// 			.sf-cf-disclaimer {
+// 				font-size: 13px;
+// 			}
+// 			sf-cf-finance-services-configuration .sf-cf-content-key, .sf-cf-finance-details .sf-cf-content-key {
+// 				font-size: 13px;
+// 			}
+			
+//             .sf-cf-columns>*{
+//                 border: 0;
+//             }
+// 			sf-cf-dialog > .sf-cf-dialog {
+// 				max-width: 100%;
+// 			}
+// 			.sf-cf-finance-product {
+// 				.sf-cf-product-details {
+// 					padding-left: 30px;
+					
+// 				}
+// 			}
+// 			.sf-cf-finance-product{
+// 				.sf-cf-edit-field-container{
+// 					select{
+// 						float: none !important;
+// 						margin-bottom: 15px;
+// 					}
+// 				}
+// 			}
+// 			.sf-cf-finance-details .sf-cf-summary-parameters > tbody {
+// 				display: flex;
+// 				flex-wrap: wrap;
+// 				margin: 0 calc(15px / -2);
+// 			}
+		
+//         }  
+// 	}
+// 	sf-cf-finance-services-configuration .sf-cf-content-key-value, .sf-cf-finance-details .sf-cf-content-key-value {
+// 		flex: auto;
+// 		width: 100%;
+// 		display: block;
+// 		font-size: 18px;
+// 	}
+// }
+
+// /** Fix for inactive Calculator icon**/
+// sf-cf-finance-calculator[inactive],
+// sf-cf-finance-calculator[disabled] {
+//     display: none;
+// }
